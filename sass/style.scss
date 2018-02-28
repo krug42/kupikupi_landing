@@ -5,13 +5,15 @@
 
 @import "global/fonts.scss";
 @import "global/global.scss";
-@import "blocks/page-header.scss";
-@import "blocks/main-nav.scss";
-@import "blocks/toggle.scss";
-@import "blocks/login-button.scss";
-@import "blocks/page-info.scss";
-@import "blocks/logo.scss";
-@import "blocks/info-bar.scss";
-@import "blocks/signin-button.scss";
-@import "blocks/programs-slider.scss";
-@import "blocks/programs-slide.scss";
+@import "blocks/page-header/page-header.scss";
+@import "blocks/page-header/main-nav.scss";
+@import "blocks/page-header/toggle.scss";
+@import "blocks/page-info/login-button.scss";
+@import "blocks/page-info/logo.scss";
+@import "blocks/page-info/page-info.scss";
+@import "blocks/page-info/info-bar.scss";
+@import "blocks/page-info/signin-button.scss";
+@import "blocks/programs-slider/programs-slider.scss";
+@import "blocks/programs-slider/programs-card.scss";
+@import "blocks/page-benefits/page-benefits.scss";
+@import "blocks/page-benefits/benefits.scss";
