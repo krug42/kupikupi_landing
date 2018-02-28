@@ -2,22 +2,30 @@
   display: flex;
   flex-flow: column nowrap;
 
-  &__header-wrapper {
-    background-image: linear-gradient(to right, $orange, $lightorange);
-    height: 100%;
-    padding: 3px;
-    border-radius: 12px;
-  }
-
   &__header {
-    margin: 0;
-    display: block;
     padding: 0.5em;
     font-size: 18px;
     font-weight: 500;
-    text-align: center;
-    color: $darkblue;
     background-color: $secondary-bg;
-    border-radius: 10px;
+  }
+
+  &__header-wrapper {
+    margin: 0 5px;
+    padding: 3px;
+  }
+
+  &__container {
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: 22px;
+  }
+
+  &__item {
+    width: 33%;
+    margin-bottom: 30px;
+    padding-left: 41px;
+    font-family: 'OpenSans';
+    font-size: 10px;
+    font-weight: 300;
   }
 }

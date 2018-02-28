@@ -1,0 +1,20 @@
+.section-header {
+  margin: 0;
+  display: block;
+  padding: 0.15em 0.6em;
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  color: $darkblue;
+  background-color: $white;
+  border-radius: 10px;
+
+  &__wrapper {
+    display: inline-block;
+    height: 100%;
+    margin: 0 auto;
+    padding: 5px;
+    border-radius: 12px;
+    background-image: linear-gradient(to right, $orange, $lightorange);
+  }
+}

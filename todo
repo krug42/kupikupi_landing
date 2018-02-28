@@ -1,0 +1,17 @@
+page-header
+  logo probably must be <img>, not bg-img
+
+page-info
+  revisit semantics of headers
+
+programs-slider
+  revisit card - mb its a figure tag
+  white-space in li.feature_item
+  revisit semantics of header
+
+page_benefits
+  revisit header and items semantics
+  add icons
+  
+
+  
