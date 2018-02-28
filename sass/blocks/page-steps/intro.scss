@@ -1,0 +1,33 @@
+.intro {
+  position: relative;
+  text-align: center;
+  margin: 0 5%;
+  line-height: 1.2;
+
+  &__header {
+    margin: 0.5em 0 0 0;
+    padding: 0;
+    font-size: 16px;
+    font-weight: 500;
+    color: $orange;
+  }
+  
+  &__caption {
+    margin: 0;
+    padding: 0;
+    font-weight: 100;
+    color: $darkblue;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 164px;
+    height: 1px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    bottom: -10px;
+    background-color: $lightgray;
+  }
+}
