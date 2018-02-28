@@ -1,0 +1,77 @@
+.page-info {
+  display: flex;
+  flex-flow: column nowrap;
+  margin: 0;
+  padding: 0;
+  min-height: 518px;
+  background-position: right 25% top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../img/page-info-bg.jpg");
+  border-bottom: 5px solid $orange;
+
+  &__row {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    padding: 0 3%;
+  
+    &:first-of-type {
+      margin-top: 85px;
+    }
+  }
+
+  &__heading,
+  &__caption {
+    margin: 55px 0 0 0;
+    padding: 0;
+    height: 100%;
+    color: $white;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: right;
+    line-height: 36px;
+
+    b {
+      font-weight: 900;
+    }
+  }
+
+  &__caption {
+    margin-top: 1em;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 500;
+  }
+
+  &__sign {
+    position: relative;
+    margin: 56px auto 15px;
+    width: 22px;
+    height: 39px;
+    border: 2px solid $orange;
+    border-radius: 11px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 33%;
+      right: 8px;
+      width: 2px;
+      height: 12px;
+      background-color: $orange;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 7px;
+      right: 5px;
+      width: 0; 
+      height: 0; 
+      border-left: 4px solid transparent;
+      border-right: 4px solid transparent;
+      border-top: 5px solid $orange;
+    }
+  }
+}
