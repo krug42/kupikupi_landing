@@ -6,6 +6,7 @@
 @import "global/fonts.scss";
 @import "global/global.scss";
 @import "blocks/section-header.scss";
+@import "blocks/button.scss";
 @import "blocks/page-header/page-header.scss";
 @import "blocks/page-header/main-nav.scss";
 @import "blocks/page-header/toggle.scss";
@@ -18,7 +19,13 @@
 @import "blocks/programs-slider/programs-card.scss";
 @import "blocks/page-benefits/page-benefits.scss";
 @import "blocks/page-benefits/benefits.scss";
-@import "blocks/page-steps/about-sign.scss";
+@import "blocks/page-steps/question-circle.scss";
 @import "blocks/page-steps/page-steps.scss";
 @import "blocks/page-steps/steps.scss";
 @import "blocks/page-steps/intro.scss";
+@import "blocks/page-steps/signin-openi-button.scss";
+@import "blocks/page-calculator/input-text.scss";
+@import "blocks/page-calculator/page-calculator.scss";
+@import "blocks/page-calculator/calculator.scss";
+@import "blocks/page-calculator/result.scss";
+

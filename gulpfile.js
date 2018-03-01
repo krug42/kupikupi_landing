@@ -159,8 +159,7 @@ gulp.task('deploy', function () {
 gulp.task('serve', function () {
   server.init({
     server: 'build',
-    //notify: false,
-    open: 'ui',
+    open: 'local',
     cors: true
   });
 

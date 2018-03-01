@@ -1,6 +1,11 @@
 .steps {
+  display: flex;
+  flex-flow: column nowrap;
+
   &__container {
-    margin-top: 52px;
+    display: flex;
+    flex-flow: column nowrap;
+    margin-top: 30px;
     text-align: center;
   }
 
@@ -17,7 +22,6 @@
 
     &::before {
       content: attr(data-step-count);
-      // display: inline-block;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -29,7 +33,7 @@
       color: $white;
       vertical-align: middle;
       text-align: center;
-      background-image: linear-gradient(to right, $orange, $lightorange);
+      background-image: $gradient;
       border-radius: 50%;
     }
 
@@ -51,7 +55,6 @@
   }
 
   &__text {
-    display: block;
     margin: 0;
     margin-top: 22px;
     font-size: 14px;

@@ -1,0 +1,14 @@
+.question-circle {
+  display: block;
+  width: 13px;
+  height: 13px;
+  margin: 2px auto 0;
+  font-size: 13px;
+  color: $white;
+  background-color: $darkblue;
+  border-radius: 50%;
+
+  &::before {
+    content: '?';
+  }
+}

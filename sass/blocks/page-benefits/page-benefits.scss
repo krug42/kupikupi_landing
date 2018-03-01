@@ -6,7 +6,7 @@
   margin: 0;
   padding-top: 23px;
   background-color: $secondary-bg;
-  height: 227px;
+  min-height: 227px;
   z-index: 0;
 
   &::after {
