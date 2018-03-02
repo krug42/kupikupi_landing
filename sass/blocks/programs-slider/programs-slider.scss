@@ -4,7 +4,7 @@
   margin: 0;
   margin-top: -5px;
   padding: 5px;
-  background-image: $gradient;
+  background-image: $orange-gradient;
   
   &__gradient-wrapper {
     position: relative;
@@ -47,7 +47,7 @@
     height: 21px;
     border: 0;
     border-radius: 50%;
-    background-image: linear-gradient(to right, $orange, $lightorange);
+    background-image: $orange-gradient;
 
     &--disabled {
       border: 1px solid $orange;

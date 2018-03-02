@@ -1,0 +1,47 @@
+.result {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  
+  &__main {
+    position: relative;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    margin: 23px 20% 36px;
+    padding: 9px;
+    text-align: center;
+    border: 1px dashed $darkblue;
+    border-radius: 10px;
+    min-height: 245px;
+
+    .result__item:last-of-type {
+      margin-top: 9px;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 52%;
+      right: 0;
+      left: 0;
+      width: 52px;
+      height: 1px;
+      margin: 0 auto;
+      background-color: $darkblue-40;
+    }
+  }
+
+  &__equals-sign,
+  &__plus-sign {
+    height: 38px;
+    width: 38px;
+    margin: 18px 0 7px;
+    background-color: $orange;
+  }
+
+  &__login {
+    margin-top: 44px;
+    margin-bottom: 65px;
+  }
+}

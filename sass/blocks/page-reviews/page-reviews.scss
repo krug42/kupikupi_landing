@@ -1,0 +1,28 @@
+.page-reviews {
+  background-color: $reviews-bg;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+
+  &__header {
+    position: relative;
+    display: inline-block;
+    margin: 46px 0 20px;
+    font-size: 36px;
+    font-weight: 700;
+    color: $darkblue;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -8px;
+      width: 48px;
+      height: 5px;
+      margin: 0 auto;
+      background-color: $orange;
+
+    }
+  }
+}

@@ -1,0 +1,56 @@
+.result-item {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  text-align: center;
+
+  &__caption {
+    margin-top: 16px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.2;
+    color: $darkblue;
+
+    b {
+      font-weight: 700;
+    }
+
+    &--thin {
+      font-weight: 300;
+    }
+
+    &--important {
+      font-size: 24px;
+    }
+
+    &--nomargin {
+      margin-top: 0;
+    }
+  }
+  
+  &__value {
+    margin: 12px 0 8px;
+    font-family: 'OpenSans';
+    font-size: 30px;
+    font-weight: 500;
+    color: $orange;
+
+    &--month {
+      &::after {
+        content: ' Месяцев';
+        font-size: 18px;
+      }
+    }
+
+    &--thin {
+      font-weight: 300;
+    }
+  }
+
+  &__complex-string {
+    margin-top: 3px;
+    font-size: 30px;
+    font-weight: 300;
+    color: $darkblue;
+  }
+}

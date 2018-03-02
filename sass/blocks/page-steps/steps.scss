@@ -33,7 +33,7 @@
       color: $white;
       vertical-align: middle;
       text-align: center;
-      background-image: $gradient;
+      background-image: $orange-gradient;
       border-radius: 50%;
     }
 
@@ -55,10 +55,12 @@
   }
 
   &__text {
-    margin: 0;
-    margin-top: 22px;
+    margin: 22px 0 0 0;
     font-size: 14px;
     font-weight: 700;
+  }
 
+  &__question {
+    margin: 0 auto;
   }
 }

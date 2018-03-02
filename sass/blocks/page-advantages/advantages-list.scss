@@ -1,0 +1,17 @@
+.advantages-list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  &__item {
+    margin-top: 35px;
+    width: 47%;
+
+    &:nth-child(2n) {
+      margin-left: 6%;
+    }
+  }
+}
