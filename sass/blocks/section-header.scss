@@ -1,20 +1,19 @@
 .section-header {
+  display: inline-block;
   margin: 0;
-  display: block;
-  padding: 0.15em 0.6em;
-  font-size: 36px;
-  font-weight: 700;
-  text-align: center;
-  color: $darkblue;
-  background-color: $white;
-  border-radius: 7px;
+  padding: 5px;
+  border-radius: 12px;
+  background-image: $orange-gradient;
 
-  &__wrapper {
-    display: inline-block;
-    height: 100%;
-    margin: 0 auto;
-    padding: 5px;
-    border-radius: 12px;
-    background-image: $gradient;
+  &__text {
+    display: block;
+    margin: 0;
+    padding: 0.15em 0.6em;
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    color: $darkblue;
+    background-color: $white;
+    border-radius: 7px;
   }
 }

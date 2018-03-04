@@ -3,89 +3,8 @@
   flex-flow: column nowrap;
   align-items: center;
 
-  &__form {
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    margin-top: 34px;
-  }
-
-  &__input-wrapper {
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
+  &__inputbox {
     margin-top: 12px;
-    text-align: center;
-  }
-  
-  &__label-wrapper {
-    margin-top: 13px;
-  }
-
-  &__label-text {
-    display: inline-block;
-    font-size: 24px;
-    font-weight: 500;
-    color: $darkblue;
-    
-    &--little {
-      position: relative;
-      margin-top: 9px;
-      font-size: 16px;
-
-      &::after {
-        content: '';
-        position: absolute;
-        bottom: -7px;
-        right: 0;
-        left: 0;
-        margin: 0 auto;
-        height: 1px;
-        width: 122px;
-        background-color: $lightgray;
-      }
-    }
-
-    &--middle {
-      font-size: 18px;
-    }
-  }
-
-  &__input {
-    margin: 14px;
-  }
-
-  &__subheader {
-    margin: 13px 0 0 0;
-    font-size: 25px;
-    font-weight: 700;
-    margin: 0;
-    color: $orange;
-    
-    &--big {
-      position: relative;
-      margin: 8px 0 15px;
-      font-weight: 500;
-      font-size: 30px;
-      text-transform: uppercase;
-
-      &::before {
-        content: '';
-        position: absolute;
-        left: 50%;
-        bottom: -2px;
-        width: 30px;
-        height: 3px;
-        background-color: $darkblue;
-        transform: translateX(-50%);
-      }
-    }
-  }
-
-  &__range-picker-wrapper {
-    //TEMP
-    padding: 20px;
-    height: 119px;
   }
 
   &__about {
@@ -99,6 +18,7 @@
     color: $darkblue;
 
     &--important {
+      margin-top: 17px;
       color: $orange;
     }
 
@@ -111,12 +31,17 @@
         position: absolute;
         right: 0;
         left: 0;
+        bottom: -10px;
         margin: 0 auto;
         width: 176px;
         height: 1px;
         background-color: $orange-20;
       }
     }
+  }
+
+  &__submit-button {
+    margin: 25px 0;
   }
 
 }

@@ -13,5 +13,8 @@ page_benefits
   revisit header and items semantics
   add icons
   
-
+flow:
+  у блоков нету маргинов
+  элемент может быть блоком -> блоки за стили, элементы за позишнинг
+  мэйн блок инклюдится последним
   

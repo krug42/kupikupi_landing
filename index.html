@@ -14,11 +14,14 @@
 </head>
 
 <body>
-  <header class="page-header">
-    <nav class="main-nav main-nav--opened main-nav--nojs">
+  <header class="page-header page-header__slide-bg" data-current-slide="1">
+    <!-- <div class="page-header__bg-filter"></div> -->
+    <nav class="page-header__nav  main-nav  main-nav--opened  page-header__nav--nojs">
       <ul class="main-nav__list">
         <li class="main-nav__item">
-          <a class="main-nav__link">Для кого</a>
+          <a class="main-nav__link" href="">
+            <span class="main-nav__link-text">Для кого</span>
+          </a>
         </li>
         <li class="main-nav__item">
           <a class="main-nav__link" href="">
@@ -53,35 +56,46 @@
       </ul>
     </nav>
     <button class="toggle">
-      <span class="toggle__icon"></span>
+      <span class="toggle__icon">Показать меню</span>
     </button>
-    <a href="" class="button  login-button">Личный кабинет</a>
-  </header>
-  <main class="main-content">
-    <section class="page-info">
-      <div class="page-info__row">
-        <div class="logo">
-          <a class="logo__link"></a>
-        </div>
-        <div class="info-bar">
-          <span class="info-bar__city">Омск</span>
-          <a href="tel:88002345877" class="info-bar__phone">8-800-2345-877</a>
+    <a href="" class="page-header__login-button  button  login-button">Личный кабинет</a>
+    <div class="page-header__content-wrapper">
+      <div class="page-header__row-wrapper">
+        <a class="page-header__logo  logo">
+          <img src="../img/logo.svg" alt="logo" width="151" height="56">
+        </a>
+        <div class="page-header__info-bar  info-bar">
+          <div class="info-bar__wrapper">
+            <span class="info-bar__city">Омск</span>
+            <a href="tel:88002345877" class="info-bar__phone">8-800-2345-877</a>
+          </div>
         </div>
       </div>
-      <div class="page-info__row">
-        <h2 class="page-info__heading">С нами квартира мечты
+      <!-- slide content start -->
+      <div class="page-header__slide page-header__slide--shown" data-slide="1">
+        <h2 class="page-header__heading">С нами квартира мечты
           <b>становится вашим домом!</b>
         </h2>
-      </div>
-      <div class="page-info__row">
-        <p class="page-info__caption">Приобретайте недвижимость
-          <br> на самых выгодных условиях!
+        <p class="page-header__caption">Приобретайте недвижимость на самых выгодных условиях!
           <b>0% годовых</b>
         </p>
       </div>
-      <a href="" class="button  signin-button">Регистрация</a>
-      <div class="page-info__sign"></div>
-    </section>
+      <!-- slide content end -->
+      <!-- slide content start -->
+      <div class="page-header__slide  page-header__slide--2" data-slide="2">
+        <h2 class="page-header__heading">
+          <b>Хотите выгодно купить автомобиль</b> - мы знаем как!
+        </h2>
+        <p class="page-header__caption">Приобретайте автомобиль на самых выгодных условиях!
+          <b>0% годовых</b>
+        </p>
+      </div>
+      <!-- slide content end -->
+      <a href="" class="page-header__signin-button  signin-button">Регистрация</a>
+    </div>
+    <div class="page-header__sign"></div>
+  </header>
+  <main class="main-content">
     <section class="programs-slider">
       <div class="programs-slider__gradient-wrapper">
         <div class="programs-slider__slides-list">
@@ -140,21 +154,111 @@
               </div>
             </div>
           </div>
+          <div class="programs-slider__slide programs-card">
+            <img src="img/pre_1.jpg" width="262" height="148" alt="">
+            <div class="programs-card__caption">
+              <div class="programs-card__header">Авто с пробегом</div>
+              <div class="programs-card__features-list">
+                <ul>
+                  <li class="programs-card__feature"> Заем на срок до
+                    <b>5 лет</b>
+                  </li>
+                  <li class="programs-card__feature"> Первоначальный взнос
+                    <b>от 0 рублей</b>
+                  </li>
+                  <li class="programs-card__feature">
+                    <b>Единоразовый</b> членский взнос 10%</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="programs-slider__slide programs-card">
+            <img src="img/pre_1.jpg" width="262" height="148" alt="">
+            <div class="programs-card__caption">
+              <div class="programs-card__header">Авто с пробегом</div>
+              <div class="programs-card__features-list">
+                <ul>
+                  <li class="programs-card__feature"> Заем на срок до
+                    <b>5 лет</b>
+                  </li>
+                  <li class="programs-card__feature"> Первоначальный взнос
+                    <b>от 0 рублей</b>
+                  </li>
+                  <li class="programs-card__feature">
+                    <b>Единоразовый</b> членский взнос 10%</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="programs-slider__slide programs-card">
+            <img src="img/pre_1.jpg" width="262" height="148" alt="">
+            <div class="programs-card__caption">
+              <div class="programs-card__header">Авто с пробегом</div>
+              <div class="programs-card__features-list">
+                <ul>
+                  <li class="programs-card__feature"> Заем на срок до
+                    <b>5 лет</b>
+                  </li>
+                  <li class="programs-card__feature"> Первоначальный взнос
+                    <b>от 0 рублей</b>
+                  </li>
+                  <li class="programs-card__feature">
+                    <b>Единоразовый</b> членский взнос 10%</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="programs-slider__slide programs-card">
+            <img src="img/pre_1.jpg" width="262" height="148" alt="">
+            <div class="programs-card__caption">
+              <div class="programs-card__header">Авто с пробегом</div>
+              <div class="programs-card__features-list">
+                <ul>
+                  <li class="programs-card__feature"> Заем на срок до
+                    <b>5 лет</b>
+                  </li>
+                  <li class="programs-card__feature"> Первоначальный взнос
+                    <b>от 0 рублей</b>
+                  </li>
+                  <li class="programs-card__feature">
+                    <b>Единоразовый</b> членский взнос 10%</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="programs-slider__slide programs-card">
+            <img src="img/pre_1.jpg" width="262" height="148" alt="">
+            <div class="programs-card__caption">
+              <div class="programs-card__header">Авто с пробегом</div>
+              <div class="programs-card__features-list">
+                <ul>
+                  <li class="programs-card__feature"> Заем на срок до
+                    <b>5 лет</b>
+                  </li>
+                  <li class="programs-card__feature"> Первоначальный взнос
+                    <b>от 0 рублей</b>
+                  </li>
+                  <li class="programs-card__feature">
+                    <b>Единоразовый</b> членский взнос 10%</li>
+                </ul>
+              </div>
+            </div>
+          </div>
           <!-- card list ends here -->
         </div>
-        <div class="programs-slider__button-wrapper">
-          <button class="programs-slider__button programs-slider__button--disabled programs-slider__button--prev"></button>
-          <button class="programs-slider__button programs-slider__button--next"></button>
+        <div class="programs-slider__button-wrapper slider-buttons">
+          <button class="slider-buttons__button slider-buttons__button--prev"></button>
+          <button class="slider-buttons__button slider-buttons__button--next"></button>
         </div>
         <div class="programs-slider__header">И все это под 0% годовых!</div>
       </div>
     </section>
     <section class="page-benefits">
       <div class="benefits">
-        <div class="section-header__wrapper benefits__header-wrapper">
+        <h3 class="section-header benefits__header-wrapper">
           <!-- this extending section-header styles -->
-          <h3 class="section-header benefits__header">Для кого подойдут программы КОПИКУПИ?</h3>
-        </div>
+          <span class="section-header__text benefits__header">Для кого подойдут программы КОПИКУПИ?</span>
+        </h3>
         <div class="benefits__container">
           <div class="benefits__item">Кредитная история не ограничивает вас</div>
           <div class="benefits__item">Без справок о доходах</div>
@@ -175,9 +279,9 @@
           <h3 class="intro__header">Делаем каждый этап простым и выгодным!</h3>
         </div>
         <div class="steps__container">
-          <div class="section-header__wrapper">
-            <h3 class="steps__question section-header">Как начать копить?</h3>
-          </div>
+          <h3 class="section-header  steps__question">
+            <span class="section-header__text">Как начать копить?</span>
+          </h3>
           <ul class="steps__list">
             <li class="steps__item steps__item--left" data-step-count="1">
               <p class="steps__text">Зарегистрируйтесь в OPENI.</p>
@@ -198,9 +302,9 @@
           </ul>
         </div>
         <div class="steps__container">
-          <div class="section-header__wrapper">
-            <h3 class="steps__question section-header">Как купить?</h3>
-          </div>
+          <h3 class="section-header  steps__question">
+            <span class="section-header__text">Как купить?</span>
+          </h3>
           <ul class="steps__list">
             <li class="steps__item steps__item--left" data-step-count="5">
               <p class="steps__text">Вы первый в очереди. Можете изменить сумму займа!</p>
@@ -223,116 +327,281 @@
       </div>
     </section>
     <section class="page-calculator">
-      <div class="section-header__wrapper">
-        <h3 class="page-calculator__header section-header">Калькулятор</h3>
-      </div>
-      <div class="calculator">
-        <form action="" class="calculator__form">
-          <div class="calculator__input-wrapper">
-            <label for="plan" class="calculator__label-text">Я планирую купить</label>
-            <select name="plan" id="plan" class="calculator__input input-text">
-              <option value="auto">Автомобиль</option>
-              <option value="realty">Недвижимость</option>
-            </select>
-          </div>
-          <div class="calculator__input-wrapper">
-            <label for="total-amount" class="calculator__label-text">стоимостью</label>
-            <input type="text" id="total-amount" class="calculator__input input-text">
-          </div>
-          <div class="calculator__input-wrapper">
-            <label for="date" class="calculator__label-wrapper">
-              <h4 class="calculator__subheader">Срок</h4>
-              <span class="calculator__label-text calculator__label-text--little">Укажите в течении какого времени
-                <br> вы готовы делать выплаты по заему</span>
-            </label>
-            <div class="calculator__range-picker-wrapper">
-              <span class="calculator__range-picker-result"></span>
-              <input type="range" id="date" class="calculator__range-picker">
-            </div>
-          </div>
-          <p class="calculator__about">
-            А мы посчитаем когда вы сможете получить заем. Очередность выстраивается на основе коэффициента участия - это пропорциональная
-            зависимость ваших вложений к заему, который вам необходим, формула выглядит так
-          </p>
-          <div class="calculator__input-wrapper">
-            <label for="initial-payment" class="calculator__label-wrapper">
-              <h4 class="calculator__subheader calculator__subheader--big">Вношу</h4>
-              <span class="calculator__label-text calculator__label-text--middle">Сумма, которую вы готовы внести сразу</span>
-            </label>
-            <input type="text" id="initial-payment" class="calculator__input input-text input-text--wide">
-          </div>
-          <p class="calculator__about">
-            Одним из преимуществ программ "КОПИКУПИ" является отсутствие обязательного первоначального взноса. Вы самостоятельно определяете,
-            какой взнос сделаете в программу. Помните, что первоначальный взнос продвигает вас в очереди, чем больше взнос,
-            тем ближе выдача заема.
-          </p>
-          <div class="calculator__input-wrapper">
-            <label for="monthly-payment" class="calculator__label-wrapper">
-              <h4 class="calculator__subheader calculator__subheader--big">Коплю</h4>
-              <span class="calculator__label-text calculator__label-text--middle">Сумма, которую вы готовы вносить ежемесячно</span>
-            </label>
-            <input type="text" id="monthly-payment" class="calculator__input input-text input-text--wide">
-          </div>
-          <p class="calculator__about calculator__about--withdivider">
-            Ежемесячные накопления помогут вам подняться
-            <br>в очереди и быстрее получить беспроцентный заем на вашу цель.
-          </p>
-          <p class="calculator__about calculator__about--important">
-            Помните - чем больше вы накопите, тем меньше будут членский взнос
-            <br>и ежемесячный платеж и тем быстрее вы получите беспроцентный заём.
-          </p>
-          <button type="submit" class="button  calculator__submit-button">Рассчитать</button>
-        </form>
-      </div>
-      <div class="result">
-        <div class="result__main">
-          <div class="result__item">
-            <span class="result__caption">Вы получите заем приблизительно через</span>
-            <span class="result__value result__value--month" id="result-month">0</span>
-          </div>
-          <div class="result__item">
-            <span class="result__caption">К этому времени вы накопите:</span>
-            <span class="result__value result__value--rub" id="result-accumulated-amount">0</span>
+      <h3 class="page-calculator__header  section-header">
+        <span class="section-header__text">Калькулятор</span>
+      </h3>
+      <form action="" class="page-calculator__form  calculator">
+        <div class="calculator__inputbox  input-container">
+          <label for="plan" class="input-container__label-text">Я планирую купить</label>
+          <select name="plan" id="plan" class="input-container__input  input-text">
+            <option value="auto">Автомобиль</option>
+            <option value="realty">Недвижимость</option>
+          </select>
+        </div>
+        <div class="calculator__inputbox  input-container">
+          <label for="total-amount" class="input-container__label-text">стоимостью</label>
+          <input type="text" id="total-amount" class="input-container__input input-text">
+        </div>
+        <div class="calculator__inputbox  input-container">
+          <label for="date" class="input-container__label-wrapper">
+            <span class="input-container__subheader">Срок</span>
+            <span class="input-container__label-text input-container__label-text--little">Укажите в течении какого времени
+              <br> вы готовы делать выплаты по заему</span>
+          </label>
+          <div class="input-container__range-picker-wrapper">
+            <span class="input-container__range-picker-result"></span>
+            <input type="range" id="date" class="input-container__range-picker">
           </div>
         </div>
-        <h4 class="calculator__subheader calculator__subheader--big result__header">Оформляю</h4>
-        <div class="result__item">
-          <span class="result__caption">
+        <p class="calculator__about">
+          А мы посчитаем когда вы сможете получить заем. Очередность выстраивается на основе коэффициента участия - это пропорциональная
+          зависимость ваших вложений к заему, который вам необходим, формула выглядит так
+        </p>
+        <div class="calculator__inputbox  input-container">
+          <label for="initial-payment" class="input-container__label-wrapper">
+            <span class="input-container__subheader input-container__subheader--big">Вношу</span>
+            <span class="input-container__label-text input-container__label-text--middle">Сумма, которую вы готовы внести сразу</span>
+          </label>
+          <input type="text" id="initial-payment" class="input-container__input input-text input-text--wide">
+        </div>
+        <p class="calculator__about">
+          Одним из преимуществ программ "КОПИКУПИ" является отсутствие обязательного первоначального взноса. Вы самостоятельно определяете,
+          какой взнос сделаете в программу. Помните, что первоначальный взнос продвигает вас в очереди, чем больше взнос,
+          тем ближе выдача заема.
+        </p>
+        <div class="calculator__inputbox  input-container">
+          <label for="monthly-payment" class="input-container__label-wrapper">
+            <span class="input-container__subheader input-container__subheader--big">Коплю</span>
+            <span class="input-container__label-text input-container__label-text--middle">Сумма, которую вы готовы вносить ежемесячно</span>
+          </label>
+          <input type="text" id="monthly-payment" class="input-container__input input-text input-text--wide">
+        </div>
+        <p class="calculator__about calculator__about--withdivider">
+          Ежемесячные накопления помогут вам подняться
+          <br>в очереди и быстрее получить беспроцентный заем на вашу цель.
+        </p>
+        <p class="calculator__about calculator__about--important">
+          Помните - чем больше вы накопите, тем меньше будут членский взнос
+          <br>и ежемесячный платеж и тем быстрее вы получите беспроцентный заём.
+        </p>
+        <button type="submit" class="button  calculator__submit-button">Рассчитать</button>
+      </form>
+      <div class="result">
+        <div class="result__main">
+          <div class="result__item  result-item">
+            <span class="result-item__caption">Вы получите заем приблизительно через</span>
+            <span class="result-item__value  result-item__value--month" id="result-month">0</span>
+          </div>
+          <div class="result__item  result-item">
+            <span class="result-item__caption">К этому времени
+              <br>вы накопите:</span>
+            <span class="result-item__value  result-item__value--rub" id="result-accumulated-amount">0</span>
+          </div>
+        </div>
+        <span class="input-container__subheader  input-container__subheader--big  result__subheader">Оформляю</span>
+        <div class="result__item  result-item">
+          <span class="result-item__caption">
             <b>Членский взнос</b> - это единоразовый платеж при получении заема на руки.
           </span>
-          <span class="result__complex-string">
-            <span class="result__value">8.4%</span>=
-            <span class="result__value result__value--rub" id="membership-fee">0</span>
+          <span class="result-item__complex-string">
+            <span class="result-item__value result-item__value--thin">8.4%</span> =
+            <span class="result-item__value result-item__value--thin result-item__value--rub" id="membership-fee">0</span>
           </span>
         </div>
         <div class="result__plus-sign"></div>
-        <div class="result__item">
-          <span class="result__caption">
+        <div class="result__item  result-item">
+          <span class="result-item__caption result-item__caption--thin">
             <b>Оформление сделки</b> - по опыту наших участников оформление документов и банковский перевод составит
           </span>
-          <span class="result__complex-string">=
-            <span class="result__value">1.5%</span>=
-            <span class="result__value result__value--rub" id="execution-fee">0</span>
+          <span class="result-item__complex-string">=
+            <span class="result-item__value result-item__value--thin">1.5%</span> =
+            <span class="result-item__value result-item__value--thin result-item__value--rub" id="execution-fee">0</span>
           </span>
         </div>
         <div class="result__equals-sign"></div>
-        <h4 class="calculator__subheader calculator__subheader--big result__header">Живу и покупаю</h4>
-        <div class="result__item result__item--important">
-          <span class="result-caption">Вам остается выплатить</span>
-          <span class="result__value result__value--rub result__value--important" id="result-total-amount">0</span>
+        <span class="input-container__subheader  input-container__subheader--big  result__subheader">Живу и покупаю</span>
+        <div class="result__item  result-item">
+          <span class="result-item__caption result-item__caption--important result-item__caption--nomargin">Вам остается выплатить</span>
+          <span class="result-item__value result-item__value--rub result-item__value--important" id="result-total-amount">0</span>
         </div>
-        <div class="result__item result__item--important">
-          <span class="result-caption">Срок</span>
-          <span class="result__value result__value--year result__value--important" id="result-years">0</span>
+        <div class="result__item  result-item">
+          <span class="result-item__caption result-item__caption--important">Срок</span>
+          <span class="result-item__value result-item__value--year result-item__value--important" id="result-years">0</span>
         </div>
-        <div class="result__item result__item--important">
-          <span class="result-caption">Ежемесячный платеж составляет</span>
-          <span class="result__value result__value--rub result__value--important" id="result-montly-payment">0</span>
+        <div class="result__item  result-item">
+          <span class="result-item__caption result-item__caption--important">Ежемесячный платеж составляет</span>
+          <span class="result-item__value result-item__value--rub result-item__value--important" id="result-montly-payment">0</span>
+        </div>
+      </div>
+      <div class="result__graph  result-graph"></div>
+      <div class="result__login  result-login">
+        <span class="result-login__header">Появилась новая цель?</span>
+        <span class="result-login__caption">У нас для вас есть бонусы при открытии
+          <br>новой программы накопления</span>
+        <a href="" class="button  result-login__button">Войти в личный кабинет</a>
+      </div>
+    </section>
+    <section class="page-advantages">
+      <h3 class="page-advantages__header  section-header">
+        <span class="section-header__text">Почему КОПИКУПИ?</span>
+      </h3>
+      <ul class="page-advantages__list advantages-list">
+        <li class="advantages-list__item advantages-item">
+          <h4 class="advantages-item__header">Доступно</h4>
+          <p class="advantages-item__text">Участие в программах с минимальным первоначальным взносом без подтверждения доходов</p>
+        </li>
+        <li class="advantages-list__item advantages-item">
+          <h4 class="advantages-item__header">Законно</h4>
+          <p class="advantages-item__text">Контроль государственных и внутренних надзорных органов кооператива за целевым использованием средств
+          </p>
+        </li>
+        <li class="advantages-list__item advantages-item">
+          <h4 class="advantages-item__header">Надежно</h4>
+          <p class="advantages-item__text">Все выданные заемы обеспечены залогами. Проверка приобретаемого имущества нотариусами. Использование депозита нотариуса
+            при расчетах с продавцами</p>
+        </li>
+        <li class="advantages-list__item advantages-item">
+          <h4 class="advantages-item__header">Прозрачно</h4>
+          <p class="advantages-item__text">Мы предоставляем всем своим пайщикам информацию о количестве денежных средств в кооперативе и проводим общие собрания
+            с пайщиками</p>
+        </li>
+        <li class="advantages-list__item advantages-item">
+          <h4 class="advantages-item__header">Выгодно</h4>
+          <p class="advantages-item__text">Вы вкладываете средства в свое будущее и не переплачиваете никаких процентов при возвращении заема</p>
+        </li>
+        <li class="advantages-list__item advantages-item">
+          <h4 class="advantages-item__header">Удобно</h4>
+          <p class="advantages-item__text">Мы подключили собственную терминальную сеть для вашего удобства и наша техподдержка работает 24/7 и помогает на
+            пути к вашей цели</p>
+        </li>
+        <li class="advantages-list__item advantages-item">
+          <h4 class="advantages-item__header">Безопасно</h4>
+          <p class="advantages-item__text">Все этапы оформления документов проводятся на высоком технологическом уровне и проверяются нашими юристами</p>
+        </li>
+      </ul>
+    </section>
+    <section class="page-stats">
+      <h3 class="page-stats__header  section-header">
+        <span class="section-header__text">КОПИКУПИ сегодня</span>
+      </h3>
+      <ul class="page-stats__list stats-list">
+        <li class="stats-list__item stats-item">
+          <span class="stats-item__value">56 886 399</span>
+          <p class="stats-item__caption">Сэкономлено
+            <br>
+            <b>нашими пайщиками</b>
+          </p>
+        </li>
+        <li class="stats-list__item stats-item">
+          <span class="stats-item__value">6 693 768</span>
+          <p class="stats-item__caption">Готовы к выдаче
+            <br>
+            <b>уже сегодня</b>
+          </p>
+        </li>
+        <li class="stats-list__item stats-item">
+          <span class="stats-item__value">145 637 389</span>
+          <p class="stats-item__caption">
+            <b>Выдано пайщикам на приобретение</b>
+            <br>Недвижимости и Автомобиля</p>
+        </li>
+        <li class="stats-list__item stats-item">
+          <span class="stats-item__value">1234</span>
+          <p class="stats-item__caption">Пайщиков
+            <b>вступили
+              <br>в КопиКупи</b>
+          </p>
+        </li>
+        <li class="stats-list__item stats-item">
+          <span class="stats-item__value">123</span>
+          <p class="stats-item__caption">пайщика
+            <br class="hidden">
+            <b>достигли своих целей</b>
+          </p>
+        </li>
+      </ul>
+    </section>
+    <section class="page-reviews">
+      <h3 class="page-reviews__header">Отзывы</h3>
+      <div class="page-reviews__slider reviews-slider">
+        <ul class="reviews-slider__slides">
+          <li class="reviews-slider__slide review">
+            <div class="review__video"></div>
+            <div class="review__author review-author">
+              <a href="" class="review-author__avatar">
+                <img src="" alt="vk avatar" class="review-author__avatar-image" width="64" height="64">
+              </a>
+              <h5 class="review-author__name">Татьяна Лаврухина</h5>
+              <span class="review-author">г. Омск</span>
+            </div>
+            <div class="review__info-wrapper">
+              <span class="review__info">Сумма займа 160 000 на 12 месяцев</span>
+              <span class="review__info">Платеж 8 708</span>
+              <span class="review__info">Накопила 55 500 за 16 месяцев</span>
+            </div>
+            <h4 class="review__header">Рефинансирование автокредита</h4>
+            <p class="review__text">Я очень довольна, что такая возможность существует. Я считаю, что это необходимая вещь: помощь населению в приобретении
+              как автомобилей, так и жилья. Это очень удобно. Когда открылась программа «КОПИКУПИ», я сразу приняла участие.
+              Интересная программа, и я ее буду всем рекомендовать, чтобы люди пользовались. Хотела бы сотрудничать с кооперативом
+              в дальнейшем, потому что это очень выгодно. Людям нужно больше информации, чтобы они могли прийти, послушать
+              и понять. Банковская система сейчас – совершенно не тот вариант, и люди знают, что такое ипотека. Нужно просто
+              больше рассказывать об этой возможности. </p>
+          </li>
+          <li class="reviews-slider__slide review">
+            <div class="review__video"></div>
+            <div class="review__author review-author">
+              <a href="" class="review-author__avatar avatar">
+                <img src="" alt="vk avatar" class="avatar__image" width="64" height="64">
+              </a>
+              <h5 class="review-author__name">Татьяна Лаврухина</h5>
+              <span class="review-author">г. Омск</span>
+            </div>
+            <div class="review__info-wrapper">
+              <span class="review__info">Сумма займа 160 000 на 12 месяцев</span>
+              <span class="review__info">Платеж 8 708</span>
+              <span class="review__info">Накопила 55 500 за 16 месяцев</span>
+            </div>
+            <h4 class="review__header">Рефинансирование автокредита</h4>
+            <p class="review__text">Я очень довольна, что такая возможность существует. Я считаю, что это необходимая вещь: помощь населению в приобретении
+              как автомобилей, так и жилья. Это очень удобно. Когда открылась программа «КОПИКУПИ», я сразу приняла участие.
+              Интересная программа, и я ее буду всем рекомендовать, чтобы люди пользовались. Хотела бы сотрудничать с кооперативом
+              в дальнейшем, потому что это очень выгодно. Людям нужно больше информации, чтобы они могли прийти, послушать
+              и понять. Банковская система сейчас – совершенно не тот вариант, и люди знают, что такое ипотека. Нужно просто
+              больше рассказывать об этой возможности. </p>
+          </li>
+          <li class="reviews-slider__slide review">
+            <div class="review__video"></div>
+            <div class="review__author review-author">
+              <a href="" class="review-author__avatar avatar">
+                <img src="" alt="vk avatar" class="avatar__image" width="64" height="64">
+              </a>
+              <h5 class="review-author__name">Татьяна Лаврухина</h5>
+              <span class="review-author">г. Омск</span>
+            </div>
+            <div class="review__info-wrapper">
+              <span class="review__info">Сумма займа 160 000 на 12 месяцев</span>
+              <span class="review__info">Платеж 8 708</span>
+              <span class="review__info">Накопила 55 500 за 16 месяцев</span>
+            </div>
+            <h4 class="review__header">Рефинансирование автокредита</h4>
+            <p class="review__text">Я очень довольна, что такая возможность существует. Я считаю, что это необходимая вещь: помощь населению в приобретении
+              как автомобилей, так и жилья. Это очень удобно. Когда открылась программа «КОПИКУПИ», я сразу приняла участие.
+              Интересная программа, и я ее буду всем рекомендовать, чтобы люди пользовались. Хотела бы сотрудничать с кооперативом
+              в дальнейшем, потому что это очень выгодно. Людям нужно больше информации, чтобы они могли прийти, послушать
+              и понять. Банковская система сейчас – совершенно не тот вариант, и люди знают, что такое ипотека. Нужно просто
+              больше рассказывать об этой возможности. </p>
+          </li>
+        </ul>
+        <div class="reviews-slider__controls">
+          <button class="reviews-slider__button  reviews-slider__button--prev">Назад</button>
+          <div class="reviews-slider__indicator"></div>
+          <button class="reviews-slider__button  reviews-slider__button--next">Дальше</button>
         </div>
       </div>
     </section>
   </main>
   <script src="js/main-menu.js" type="text/javascript"></script>
+  <script src="js/header-slider.js" type="text/javascript"></script>
 </body>
 
 </html>

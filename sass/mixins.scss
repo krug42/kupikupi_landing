@@ -1,22 +1,13 @@
-@mixin container () {
-  // display: flex;
-  margin: 0 auto;
-  padding: 0 3%;
-  max-width: 620px;
+@mixin container() {
+  // display: block;
+  width: 100%;
+  padding: 0 15px;
 
   @media #{$tablet-widths} {
-    // padding-left: 20px;
-    // padding-right: 20px;
-    // padding-top: 0;
-    // padding-bottom: 0;
-    max-width: 940px;
+    // max-width: 480px;
   }
 
   @media #{$desktop-widths} {
-    // padding-left: 10px;
-    // padding-right: 10px;
-    // padding-top: 0;
-    // padding-bottom: 0;
-    max-width: 1200px;
+    max-width: 1170px;
   }
 }

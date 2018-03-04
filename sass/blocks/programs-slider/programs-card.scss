@@ -4,15 +4,14 @@
   flex-shrink: 0;
   width: 262px;
   height: 148px;
-  margin: 0 7px;
   overflow-x: hidden;
-  
+
   img {
     object-fit: cover;
   }
 
   &__caption {
-    content: '';
+    content: "";
     position: absolute;
     top: 48px;
     display: flex;
@@ -31,7 +30,7 @@
     font-weight: 500;
     border-bottom: 1px solid $blue;
   }
-  
+
   &__features-list {
     line-height: 14px;
     ul {
@@ -52,7 +51,7 @@
   }
 
   &__feature {
-    font-family: 'OpenSans';
+    font-family: "OpenSans";
     font-size: 12px;
     font-weight: 300;
 

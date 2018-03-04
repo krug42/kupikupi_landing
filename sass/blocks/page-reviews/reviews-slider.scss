@@ -1,0 +1,14 @@
+.reviews-slider {
+  display: flex;
+  flex-flow: column nowrap;
+
+  &__slides {
+    display: flex;
+    flex-flow: row nowrap;
+    list-style: none;
+  }
+
+  &__slide {
+    flex: 0 0;
+  }
+}
