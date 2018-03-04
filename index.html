@@ -14,11 +14,14 @@
 </head>
 
 <body>
-  <header class="page-header">
-    <nav class="main-nav main-nav--opened main-nav--nojs">
+  <header class="page-header page-header__slide-bg" data-current-slide="1">
+    <!-- <div class="page-header__bg-filter"></div> -->
+    <nav class="page-header__nav  main-nav  main-nav--opened  page-header__nav--nojs">
       <ul class="main-nav__list">
         <li class="main-nav__item">
-          <a class="main-nav__link">Для кого</a>
+          <a class="main-nav__link" href="">
+            <span class="main-nav__link-text">Для кого</span>
+          </a>
         </li>
         <li class="main-nav__item">
           <a class="main-nav__link" href="">
@@ -53,35 +56,46 @@
       </ul>
     </nav>
     <button class="toggle">
-      <span class="toggle__icon"></span>
+      <span class="toggle__icon">Показать меню</span>
     </button>
-    <a href="" class="button  login-button">Личный кабинет</a>
-  </header>
-  <main class="main-content">
-    <section class="page-info">
-      <div class="page-info__row">
-        <div class="logo">
-          <a class="logo__link"></a>
-        </div>
-        <div class="info-bar">
-          <span class="info-bar__city">Омск</span>
-          <a href="tel:88002345877" class="info-bar__phone">8-800-2345-877</a>
+    <a href="" class="page-header__login-button  button  login-button">Личный кабинет</a>
+    <div class="page-header__content-wrapper">
+      <div class="page-header__row-wrapper">
+        <a class="page-header__logo  logo">
+          <img src="../img/logo.svg" alt="logo" width="151" height="56">
+        </a>
+        <div class="page-header__info-bar  info-bar">
+          <div class="info-bar__wrapper">
+            <span class="info-bar__city">Омск</span>
+            <a href="tel:88002345877" class="info-bar__phone">8-800-2345-877</a>
+          </div>
         </div>
       </div>
-      <div class="page-info__row">
-        <h2 class="page-info__heading">С нами квартира мечты
+      <!-- slide content start -->
+      <div class="page-header__slide page-header__slide--shown" data-slide="1">
+        <h2 class="page-header__heading">С нами квартира мечты
           <b>становится вашим домом!</b>
         </h2>
-      </div>
-      <div class="page-info__row">
-        <p class="page-info__caption">Приобретайте недвижимость
-          <br> на самых выгодных условиях!
+        <p class="page-header__caption">Приобретайте недвижимость на самых выгодных условиях!
           <b>0% годовых</b>
         </p>
       </div>
-      <a href="" class="button  signin-button">Регистрация</a>
-      <div class="page-info__sign"></div>
-    </section>
+      <!-- slide content end -->
+      <!-- slide content start -->
+      <div class="page-header__slide  page-header__slide--2" data-slide="2">
+        <h2 class="page-header__heading">
+          <b>Хотите выгодно купить автомобиль</b> - мы знаем как!
+        </h2>
+        <p class="page-header__caption">Приобретайте автомобиль на самых выгодных условиях!
+          <b>0% годовых</b>
+        </p>
+      </div>
+      <!-- slide content end -->
+      <a href="" class="page-header__signin-button  signin-button">Регистрация</a>
+    </div>
+    <div class="page-header__sign"></div>
+  </header>
+  <main class="main-content">
     <section class="programs-slider">
       <div class="programs-slider__gradient-wrapper">
         <div class="programs-slider__slides-list">
@@ -140,11 +154,101 @@
               </div>
             </div>
           </div>
+          <div class="programs-slider__slide programs-card">
+            <img src="img/pre_1.jpg" width="262" height="148" alt="">
+            <div class="programs-card__caption">
+              <div class="programs-card__header">Авто с пробегом</div>
+              <div class="programs-card__features-list">
+                <ul>
+                  <li class="programs-card__feature"> Заем на срок до
+                    <b>5 лет</b>
+                  </li>
+                  <li class="programs-card__feature"> Первоначальный взнос
+                    <b>от 0 рублей</b>
+                  </li>
+                  <li class="programs-card__feature">
+                    <b>Единоразовый</b> членский взнос 10%</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="programs-slider__slide programs-card">
+            <img src="img/pre_1.jpg" width="262" height="148" alt="">
+            <div class="programs-card__caption">
+              <div class="programs-card__header">Авто с пробегом</div>
+              <div class="programs-card__features-list">
+                <ul>
+                  <li class="programs-card__feature"> Заем на срок до
+                    <b>5 лет</b>
+                  </li>
+                  <li class="programs-card__feature"> Первоначальный взнос
+                    <b>от 0 рублей</b>
+                  </li>
+                  <li class="programs-card__feature">
+                    <b>Единоразовый</b> членский взнос 10%</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="programs-slider__slide programs-card">
+            <img src="img/pre_1.jpg" width="262" height="148" alt="">
+            <div class="programs-card__caption">
+              <div class="programs-card__header">Авто с пробегом</div>
+              <div class="programs-card__features-list">
+                <ul>
+                  <li class="programs-card__feature"> Заем на срок до
+                    <b>5 лет</b>
+                  </li>
+                  <li class="programs-card__feature"> Первоначальный взнос
+                    <b>от 0 рублей</b>
+                  </li>
+                  <li class="programs-card__feature">
+                    <b>Единоразовый</b> членский взнос 10%</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="programs-slider__slide programs-card">
+            <img src="img/pre_1.jpg" width="262" height="148" alt="">
+            <div class="programs-card__caption">
+              <div class="programs-card__header">Авто с пробегом</div>
+              <div class="programs-card__features-list">
+                <ul>
+                  <li class="programs-card__feature"> Заем на срок до
+                    <b>5 лет</b>
+                  </li>
+                  <li class="programs-card__feature"> Первоначальный взнос
+                    <b>от 0 рублей</b>
+                  </li>
+                  <li class="programs-card__feature">
+                    <b>Единоразовый</b> членский взнос 10%</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="programs-slider__slide programs-card">
+            <img src="img/pre_1.jpg" width="262" height="148" alt="">
+            <div class="programs-card__caption">
+              <div class="programs-card__header">Авто с пробегом</div>
+              <div class="programs-card__features-list">
+                <ul>
+                  <li class="programs-card__feature"> Заем на срок до
+                    <b>5 лет</b>
+                  </li>
+                  <li class="programs-card__feature"> Первоначальный взнос
+                    <b>от 0 рублей</b>
+                  </li>
+                  <li class="programs-card__feature">
+                    <b>Единоразовый</b> членский взнос 10%</li>
+                </ul>
+              </div>
+            </div>
+          </div>
           <!-- card list ends here -->
         </div>
-        <div class="programs-slider__button-wrapper">
-          <button class="programs-slider__button programs-slider__button--disabled programs-slider__button--prev"></button>
-          <button class="programs-slider__button programs-slider__button--next"></button>
+        <div class="programs-slider__button-wrapper slider-buttons">
+          <button class="slider-buttons__button slider-buttons__button--prev"></button>
+          <button class="slider-buttons__button slider-buttons__button--next"></button>
         </div>
         <div class="programs-slider__header">И все это под 0% годовых!</div>
       </div>
@@ -497,6 +601,7 @@
     </section>
   </main>
   <script src="js/main-menu.js" type="text/javascript"></script>
+  <script src="js/header-slider.js" type="text/javascript"></script>
 </body>
 
 </html>

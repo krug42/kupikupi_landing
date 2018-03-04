@@ -1,4 +1,158 @@
 .page-header {
   position: relative;
-  background-color: $white;
+  display: flex;
+  flex-flow: column nowrap;
+  margin: 0;
+  min-height: 603px;
+  background-position: right 25% top;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__nav {
+    position: absolute;
+    z-index: 2;
+
+    &--nojs {
+      z-index: 1;
+      position: relative;
+    }
+  }
+
+  &__slide {
+    display: none;
+
+    &--shown {
+      display: block;
+    }
+  }
+
+  &__slide-bg {
+    position: relative;
+
+    &[data-current-slide="1"] {
+      background-image: $filter-gradient, url("../img/top-slider-bg-1.jpg");
+    }
+
+    &[data-current-slide="2"] {
+      background-image: $filter-gradient, url("../img/top-slider-bg-2.jpg");
+    }
+  }
+
+  &__login-button,
+  &__info-bar {
+    position: absolute;
+    right: 15px;
+    width: 22%;
+  }
+
+  &__login-button {
+    top: 26px;
+    z-index: 1;
+  }
+
+  &__info-bar {
+  }
+
+  &__content-wrapper {
+    @include container();
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 95px 0 180px;
+  }
+
+  &__row-wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+  }
+
+  &__heading,
+  &__caption {
+    height: 100%;
+    margin: 49px 0 0 0;
+    padding: 0;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: right;
+    line-height: 36px;
+    color: $white;
+
+    b {
+      font-weight: 900;
+    }
+  }
+
+  &__caption {
+    margin-top: 0.6em;
+    margin-left: auto;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 500;
+  }
+
+  &__signin-button,
+  &__sign {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &__signin-button {
+    bottom: 118px;
+  }
+
+  &__sign {
+    bottom: 22px;
+    width: 22px;
+    height: 39px;
+    border: 2px solid $orange;
+    border-radius: 11px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 33%;
+      right: 8px;
+      width: 2px;
+      height: 12px;
+      background-color: $orange;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 7px;
+      right: 5px;
+      width: 0;
+      height: 0;
+      border-left: 4px solid transparent;
+      border-right: 4px solid transparent;
+      border-top: 5px solid $orange;
+    }
+  }
+
+  @media #{$tablet-widths} {
+    min-height: 518px;
+    align-items: center;
+
+    &__row-wrapper {
+      justify-content: center;
+    }
+
+    &__heading,
+    &__caption {
+      text-align: center;
+    }
+  }
+  @media #{$desktop-widths} {
+    &__login-button,
+    &__info-bar {
+      right: calc(15px + 3%);
+      width: 11%;
+    }
+
+    &__login-button {
+      top: 8px;
+    }
+  }
 }

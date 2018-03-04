@@ -7,16 +7,16 @@
 @import "global/global.scss";
 @import "blocks/section-header.scss";
 @import "blocks/button.scss";
-@import "blocks/page-header/page-header.scss";
 @import "blocks/page-header/main-nav.scss";
 @import "blocks/page-header/toggle.scss";
 @import "blocks/page-header/login-button.scss";
-@import "blocks/page-info/logo.scss";
-@import "blocks/page-info/page-info.scss";
-@import "blocks/page-info/info-bar.scss";
-@import "blocks/page-info/signin-button.scss";
-@import "blocks/programs-slider/programs-slider.scss";
+@import "blocks/page-header/logo.scss";
+@import "blocks/page-header/info-bar.scss";
+@import "blocks/page-header/signin-button.scss";
+@import "blocks/page-header/page-header.scss";
+@import "blocks/programs-slider/slider-buttons.scss";
 @import "blocks/programs-slider/programs-card.scss";
+@import "blocks/programs-slider/programs-slider.scss";
 @import "blocks/page-benefits/page-benefits.scss";
 @import "blocks/page-benefits/benefits.scss";
 @import "blocks/page-steps/question-circle.scss";
@@ -41,4 +41,3 @@
 @import "blocks/page-reviews/review.scss";
 @import "blocks/page-reviews/reviews-slider.scss";
 @import "blocks/page-reviews/page-reviews.scss";
-

@@ -1,12 +1,14 @@
-$mobile-widths-only: "(min-width: 20px) and (max-width: 659px)";
-$tablet-widths: "(min-width: 660px)";
-$tablet-widths-only: "(min-width: 660px) and (max-width: 959px)";
+$mobile-widths-only: "(min-width: 20px) and (max-width: 619px)";
+$tablet-widths: "(min-width: 620px)";
+$tablet-widths-only: "(min-width: 620px) and (max-width: 959px)";
 $desktop-widths: "(min-width: 960px)";
 
 $white: white;
 $black: black;
+$black-10: rgba(0, 0, 0, 0.1);
 $orange: #ee772f;
 $orange-20: rgba(238, 119, 47, 0.2);
+$orange-50: rgba(238, 119, 47, 0.5);
 $lightorange: #f29716;
 $verylightblue: #f5fbfe;
 $blue: rgb(41, 128, 185);
@@ -20,7 +22,7 @@ $brown-80: rgba(38, 28, 20, 0.8);
 
 $orange-gradient: linear-gradient(to right, $orange, $lightorange);
 $advantage-gradient: linear-gradient(to right, $darkblue, $blue);
+$filter-gradient: linear-gradient(to right, $darkblue-50, $orange-50);
 
 $secondary-bg: $verylightblue;
 $reviews-bg: #f9f9f9;
-

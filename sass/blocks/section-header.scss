@@ -1,11 +1,19 @@
 .section-header {
+  display: inline-block;
   margin: 0;
+<<<<<<< HEAD
   display: inline-block;
   height: 100%;
   padding: 5px;
   border-radius: 12px;
   background-image: $orange-gradient;
   
+=======
+  padding: 5px;
+  border-radius: 12px;
+  background-image: $orange-gradient;
+
+>>>>>>> grid
   &__text {
     display: block;
     margin: 0;

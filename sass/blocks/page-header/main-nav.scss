@@ -1,35 +1,41 @@
 .main-nav {
+  width: 100%;
+  padding: 0 15px;
+  background-color: $white;
 
   &__list {
     display: flex;
     flex-direction: column;
-    list-style: none;
     padding: 2.5em 0;
     margin: 0;
+    list-style: none;
   }
 
   &__link {
     display: block;
-    padding: 1em 0 1em 18%;
+    padding: 0.75em 15%;
+    font-family: "OpenSans";
     font-size: 24px;
     font-weight: 300;
     color: $black;
     text-decoration: none;
     text-align: left;
+    background-color: $white;
     user-select: none;
     cursor: pointer;
-    background-color: $white;
 
-    &:not([href]) {
-      -webkit-tap-highlight-color: transparent;
-    }
+    @media #{$mobile-widths-only} {
+      &:not([href]) {
+        -webkit-tap-highlight-color: transparent;
+      }
 
-    &:hover[href] span {
-      border-bottom: 2px solid $blue;
-    }
+      &:hover[href] span {
+        border-bottom: 2px solid $blue;
+      }
 
-    &:active[href] span {
-      border-bottom: 2px solid $orange;
+      &:active[href] span {
+        border-bottom: 2px solid $orange;
+      }
     }
   }
 
@@ -42,51 +48,37 @@
     display: none;
   }
 
-  @media #{$tablet-widths} {
+  @media #{$desktop-widths} {
+    width: 60%;
+    padding: 0;
+    margin: 0 auto;
+    background-color: transparent;
 
     &__list {
-      flex-direction: row;
-    }
-
-    &__item {
-      margin-left: 3.5%;
-      margin-right: 3.5%;
-    }
-
-    &__item:nth-child(3) {
-      margin-left: auto;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      min-height: 0;
+      list-style: none;
+      padding: 0;
     }
 
     &__link {
-      background-color: $white;
-      color: $black;
-      border: none;
+      padding: 0.75em 0;
+      font-size: 12px;
+      color: $white;
+      text-align: center;
+      background-color: transparent;
+      text-shadow: 0 0 10px $black;
+      border-top: 3px solid transparent;
+
+      &:hover[href] {
+        border-top: 3px solid $blue;
+      }
     }
 
     &--closed {
       display: block;
-    }
-  }
-
-  @media #{$desktop-widths} {
-
-    &__list {
-      flex-direction: row;
-    }
-
-    &__item {
-      margin-left: 6%;
-      margin-right: 6%;
-    }
-
-    &__item:nth-child(3) {
-      margin-left: auto;
-    }
-
-    &__link {
-      background-color: $white;
-      color: $black;
-      border: none;
     }
   }
 }

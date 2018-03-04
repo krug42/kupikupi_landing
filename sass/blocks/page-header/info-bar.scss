@@ -1,0 +1,44 @@
+.info-bar {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-end;
+  font-size: 11px;
+  font-weight: 500;
+  color: $white;
+
+  &__wrapper {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    min-width: 90px;
+  }
+
+  &__city {
+    position: relative;
+    display: block;
+    padding-left: 1em;
+    margin-bottom: 3px;
+
+    &::before {
+      //TODO: insert icon
+    }
+  }
+
+  &__phone {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+  }
+
+  @media #{$tablet-widths} {
+    align-items: center;
+
+    &__city {
+      font-size: 12px;
+    }
+
+    &__phone {
+      font-size: 15px;
+    }
+  }
+}

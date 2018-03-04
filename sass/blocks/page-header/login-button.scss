@@ -1,12 +1,7 @@
 .login-button {
-  position: absolute;
-  top: 26px;
-  right: 3%;
-  z-index: 1;
   display: block;
-  padding: 0.5em 0;
   min-width: 90px;
-  width: 22%;
+  padding: 0.5em 0;
   font-size: 0.625em;
   font-weight: 300;
   text-align: center;
@@ -14,4 +9,5 @@
   color: $white;
   background-color: $orange;
   border-radius: 8px;
+  box-shadow: 0 5px 20px $black-10;
 }
