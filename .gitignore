@@ -1,4 +1,5 @@
 .DS_Store
+.publish
 .idea
 *.ai
 *.log
@@ -7,6 +8,7 @@
 *.sublime*
 css/*.css
 psd/
+todo
 node_modules/
 build/
 npm-debug.*
