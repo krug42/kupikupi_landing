@@ -5,7 +5,7 @@ $desktop-widths: "(min-width: 960px)";
 
 $white: white;
 $black: black;
-$black-10: rgba(0, 0, 0, 0.1);
+$black-15: rgba(0, 0, 0, 0.15);
 $orange: #ee772f;
 $orange-20: rgba(238, 119, 47, 0.2);
 $orange-50: rgba(238, 119, 47, 0.5);
@@ -22,9 +22,13 @@ $brown-80: rgba(38, 28, 20, 0.8);
 $gray: #888888;
 $darkgray: #595959;
 
+
 $orange-gradient: linear-gradient(to right, $orange, $lightorange);
 $advantage-gradient: linear-gradient(to right, $darkblue, $blue);
 $filter-gradient: linear-gradient(to right, $darkblue-50, $orange-50);
+$sign-up-section-gradient: linear-gradient(to right, $darkblue, #0a4e82);
+$sign-up-button-gradient: linear-gradient(to right, $orange, #e55904);
+$sign-up-button-shadow: #bc5100;
 
 $secondary-bg: $verylightblue;
 $placeholder-bg: $lightgray; 

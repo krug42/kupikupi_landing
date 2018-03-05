@@ -1,0 +1,46 @@
+.page-sign-up {
+  @include container();
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  padding: 27px 8%;
+  background-image: $sign-up-section-gradient;
+
+  &__header {
+    position: relative;
+    margin-bottom: 34px;
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+    color: $white;
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -17px;
+      margin: 0 auto;
+      height: 1px;
+      width: 225px;
+      background-color: $white;
+      opacity: 0.5;
+    }
+  }
+
+  &__button {
+    margin-top: 16px;
+
+    display: inline-block;
+    padding: 0.45em 1.6em 0.7em;
+    font-size: 16px;
+    font-weight: 700;
+    background-image: $sign-up-button-gradient;
+    box-shadow: 0 3px 0 0 $sign-up-button-shadow, 0 5px 5px 3px $black-15;
+  }
+
+  @media #{$desktop-widths} {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
