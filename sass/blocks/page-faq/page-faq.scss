@@ -1,0 +1,49 @@
+.page-faq {
+  @include container();
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  background-color: $secondary-bg;
+
+  &__header {
+    position: relative;
+    margin: 50px 0 11px;
+    font-size: 30px;
+    font-weight: 700;
+    color: $orange;
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -11px;
+      width: 165px;
+      height: 1px;
+      margin: 0 auto;
+      background-color: $lightgray;
+    }
+  }
+
+  &__caption {
+    margin: 15px 0;
+    font-family: 'OpenSans';
+    font-size: 20px;
+    font-weight: 300;
+    color: $darkblue;
+  }
+
+  &__collapser {
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  @media #{$tablet-widths} {
+    &__collapser {
+      max-width: 780px;
+    }
+  }
+  
+  @media #{$desktop-widths} {
+  }
+}
