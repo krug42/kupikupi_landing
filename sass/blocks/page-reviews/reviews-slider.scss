@@ -1,14 +1,103 @@
 .reviews-slider {
   display: flex;
   flex-flow: column nowrap;
+  background-color: transparent;
 
   &__slides {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     list-style: none;
+    margin: 0;
+    padding: 43px 0;
+    overflow: auto;
   }
 
   &__slide {
-    flex: 0 0;
+    //TEMP
+    margin: 0 auto;
+    width: 460px;
+  }
+
+  &__controls {
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 0 auto;
+
+  }
+
+  &__button {
+    position: relative;
+    display: block;
+    width: 36px;
+    height: 36px;
+    font-size: 0;
+    background-color: transparent;
+    border: 1px solid $orange;
+    border-radius: 50%;
+    cursor: pointer;
+
+    
+    &:before {
+      content: '';
+      position: absolute;
+      top: 35%;
+      left: 44%;
+      width: 0;
+      height: 0;
+      border-style: solid;
+    }
+
+    &:hover,
+    &:focus {
+      background-image: $orange-gradient;
+      outline: none;
+    }
+    
+    &--prev {
+      &::before {
+        border-width: 5px 6px 5px 0;
+        border-color: transparent $orange transparent transparent;
+      }
+      
+      &:hover,
+      &:focus {
+        &::before {
+          border-color: transparent $white transparent transparent;
+        }
+      }
+    }
+    
+    &--next {
+      &::before {
+        border-width: 5px 0 5px 6px;
+        border-color: transparent transparent transparent $orange;
+      }
+      
+      &:hover,
+      &:focus {
+        &::before {
+          border-color: transparent transparent transparent $white;
+        }
+      }
+    }
+  }
+
+  &__indicator-list {
+    display: flex;
+    flex-flow: row nowrap;
+    margin: auto 31px;
+  }
+  
+  &__indicator-item {
+    display: block;
+    width: 6px;
+    height: 6px;
+    margin: 0 3px;
+    background-color: $indicator-item;
+    border-radius: 50%;
+
+    &--active {
+      background-color: $orange;
+    }
   }
 }
