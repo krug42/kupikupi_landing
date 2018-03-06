@@ -1,0 +1,52 @@
+.feedback-form {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  padding: 20px 10px 35px;
+  text-align: center;
+  border: 6px solid $white-50;
+  border-radius: 10px;
+  background-color: $white-90;
+  background-clip: padding-box;
+  box-shadow: 0 3px 15px 5px $black-30;
+
+  &__header {
+    margin: 0;
+    font-size: 30px;
+    font-weight: 700;
+    color: $orange;
+  }
+
+  &__caption {
+    margin: 14px 0 0;
+    font-family: 'Opensans';
+    font-style: 14px;
+    font-weight: 300;
+    color: $darkblue;
+  }
+
+  &__input-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    max-width: 225px;
+    margin: 14px 0 0;
+  }
+
+  &__input {
+    width: 100%;
+    padding: 1.3em 1.2em;
+    margin: 0 0 9px;
+    background-color: $verylightblue;
+  }
+
+  &__checkbox-wrapper {
+    width: 50%;
+    margin: 6px 0 0;
+  }
+
+  &__submit {
+    margin-top: 28px;
+    box-shadow: 0 3px 0 0 $orange;
+  }
+}

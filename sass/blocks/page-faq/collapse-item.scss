@@ -1,5 +1,6 @@
 .collapse-item {
   
+  
   &__header {
     display: flex;
     flex-flow: row nowrap;
@@ -8,13 +9,19 @@
     margin-top: 0;
     padding-left: 25px;
     padding-right: 35px;
-    border: 1px solid $lightgray;
+    border-bottom: 1px solid $lightgray;
     
     &::before {
       content: attr(data-count);
       font-size: 36px;
       font-weight: 700;
       color: $lightgray;
+    }
+  }
+
+  &:last-of-type {
+    > .collapse-item__header {
+      border: 0;
     }
   }
   

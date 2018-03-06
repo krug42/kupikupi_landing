@@ -129,6 +129,15 @@
       border-right: 4px solid transparent;
       border-top: 5px solid $orange;
     }
+
+    &__logo-link {
+      display: block;
+    
+      > img {
+        height: 48px;
+        width: auto;
+      }
+    }
   }
 
   @media #{$tablet-widths} {
@@ -143,7 +152,19 @@
     &__caption {
       text-align: center;
     }
+
+    &__logo-link {
+      display: block;
+      margin-top: 45px;
+  
+      > img {
+        height: 70px;
+        width: auto;
+      }
+    }
   }
+
+  
   @media #{$desktop-widths} {
     &__login-button,
     &__info-bar {

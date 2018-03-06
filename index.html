@@ -61,8 +61,8 @@
     <a href="" class="page-header__login-button  button  login-button">Личный кабинет</a>
     <div class="page-header__content-wrapper">
       <div class="page-header__row-wrapper">
-        <a class="page-header__logo  logo">
-          <img src="img/logo.svg" alt="logo" width="151" height="56">
+        <a class="page-header__logo-link">
+          <img src="img/logo.svg" alt="kupikupi" width="151" height="56">
         </a>
         <div class="page-header__info-bar  info-bar">
           <div class="info-bar__wrapper">
@@ -594,7 +594,7 @@
       <h3 class="page-faq__header">Часто задаваемые вопросы</h3>
       <p class="page-faq__caption">Найдите свой вопрос</p>
       <ul class="page-faq__collapser  collapse">
-        <li class="collapse__item  collapse-item--active">
+        <li class="collapse__item  collapse-item  collapse-item--active">
           <div class="collapse-item__header" data-count="01">
             <h4 class="collapse-item__header-text">Как работает КОПИКУПИ</h4>
           </div>
@@ -709,7 +709,89 @@
           </div>
         </li>
       </ul>
+      <a href="" class="page-faq__showall">Список всех вопросов</a>
     </section>
+    <section class="page-feedback">
+      <form action="" class="page-feedback__form feedback-form">
+        <p class="feedback-form__header">Остались вопросы?</p>
+        <p class="feedback-form__caption">Укажите ваши контакты, и&nbsp;консультанты запишут вас на&nbsp;встречу в&nbsp;наш уютный офис и&nbsp;дадут исчерпывающую
+          информацию о программах КОПИКУПИ</p>
+        <div class="feedback-form__input-wrapper">
+          <input type="text" class="input-text  feedback-form__input" name="feedback-name" id="feedback-name" placeholder="Имя">
+          <input type="text" class="input-text  feedback-form__input" name="feedback-phone" id="feedback-phone" placeholder="Контактный телефон">
+          <div class="feedback-form__checkbox_wrapper  checkbox">
+            <input type="checkbox" class="checkbox__input" name="feedback-realty" id="feedback-realty">
+            <label for="feedback-realty" class="checkbox__styles"></label>
+            <label for="feedback-realty" class="checkbox__label">Недвижимость</label>
+          </div>
+          <div class="feedback-form__checkbox_wrapper  checkbox">
+            <input type="checkbox" class="checkbox__input" name="feedback-realty" id="feedback-auto">
+            <label for="feedback-auto" class="checkbox__styles"></label>
+            <label for="feedback-auto" class="checkbox__label">Автомобиль</label>
+          </div>
+        </div>
+        <button type="submit" class="button feedback-form__submit">Записаться</button>
+      </form>
+    </section>
+    <footer class="page-footer">
+      <div class="page-footer__item  page-footer__item--company  footer-company">
+        <span class="page-footer__item-header  footer-company__header">Компания</span>
+        <ul class="footer-company__list">
+          <li class="footer-company__item">
+            <a href="" class="footer-company__link">О КопиКупи</a>
+          </li>
+          <li class="footer-company__item">
+            <a href="" class="footer-company__link">Вакансии</a>
+          </li>
+          <li class="footer-company__item">
+            <a href="" class="footer-company__link">Сотрудничество</a>
+          </li>
+          <li class="footer-company__item">
+            <a href="" class="footer-company__link">Пресс-центр</a>
+          </li>
+          <li class="footer-company__item">
+            <a href="" class="footer-company__link">Реквизиты</a>
+          </li>
+          <li class="footer-company__item">
+            <a href="" class="footer-company__link">Отчетность</a>
+          </li>
+          <li class="footer-company__item">
+            <a href="" class="footer-company__link">Документы</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__item  page-footer__item--contacts  footer-contacts">
+        <span class="page-footer__item-header  footer-contacts__header">Контакты</span>
+        <a href="tel:88003003040" class="footer-contacts__link  footer-contacts__link--phone">8-800-300-30-40</a>
+        <span class="footer-contacts__caption">Звонок по России бесплатный</span>
+        <span class="footer-contacts__caption  footer-contacts__caption--city">Омск</span>
+        <a href="tel:+73812322632" class="footer-contacts__link  footer-contacts__link--phone  footer-contacts__link--second-phone">+7 (3812)-32-26-32</a>
+        <a href="" class="footer-contacts__link footer-contacts__link--change-city">Сменить город</a>
+      </div>
+      <div class="page-footer__item  page-footer__item--social  footer-social">
+        <span class="page-footer__item-header">Вконтакте</span>
+        <div class="footer-social__widget"></div>
+      </div>
+      <div class="page-footer__item  page-footer__item--social  footer-social">
+        <span class="page-footer__item-header">Одноклассники</span>
+        <div class="footer-social__widget"></div>
+      </div>
+      <div class="page-footer__item  page-footer__item--credits  footer-credits">
+        <a href="" class="logo  footer-credits__site-logo">
+          <img src="img/logo.svg" alt="logo" width="139" height="44">
+        </a>
+        <p class="footer-credits__paragraph">КОПИКУПИ&nbsp;&mdash; это взаимовыгодное объединение пайщиков Кооператива &laquo;Отрытый Дом&raquo;.</p>
+        <p class="footer-credits__paragraph">КОПИКУПИ предоставляет пайщикам самые комфортные в&nbsp;нашей стране условия для получения займа на&nbsp;покупку
+          недвижимости или автомобиля</p>
+        <p class="footer-credits__paragraph  footer-credits__paragraph--registration"> 2015-2017&nbsp;г &copy;&nbsp;Все права защищены. Народная Компания &laquo;Открытый Дом&raquo; (ООО). ОГРН: 1155543025461;
+          ИНН/КПП: 5505048797&nbsp;/ 550301001; Устав Компании</p>
+        <p class="footer-credits__author">Разработка сайта –
+          <a href="" class="footer-credits__author-link">
+            <img src="" alt="apptech">
+          </a>
+        </p>
+      </div>
+    </footer>
   </main>
   <script src="js/main-menu.js" type="text/javascript"></script>
   <script src="js/header-slider.js" type="text/javascript"></script>

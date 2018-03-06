@@ -1,0 +1,26 @@
+.footer-credits {
+
+  &__site-logo {
+    > img {
+      height: 40px;
+      width: auto;
+    }
+  }
+
+  &__paragraph {
+    margin: 14px 0 0;
+    font-size: 11px;
+
+    &--registration {
+      font-size: 10px;
+      color: $footer-registration;
+    }
+  }
+
+  &__author {
+    margin: 40px 0 0;
+    font-family: 'Museo Cyrl';
+    font-size: 14px;
+    font-weight: 500;
+  }
+}

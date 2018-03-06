@@ -4,8 +4,11 @@ $tablet-widths-only: "(min-width: 620px) and (max-width: 959px)";
 $desktop-widths: "(min-width: 960px)";
 
 $white: white;
+$white-50: rgba(255, 255, 255, 0.5);
+$white-90: rgba(255, 255, 255, 0.9);
 $black: black;
 $black-15: rgba(0, 0, 0, 0.15);
+$black-30: rgba(0, 0, 0, 0.30);
 $orange: #ee772f;
 $orange-20: rgba(238, 119, 47, 0.2);
 $orange-50: rgba(238, 119, 47, 0.5);
@@ -33,6 +36,8 @@ $sign-up-button-shadow: #bc5100;
 $secondary-bg: $verylightblue;
 $placeholder-bg: $lightgray; 
 $reviews-bg: #f9f9f9;
+$footer-bg: #34495e;
 $reviews-text: $darkgray;
 $indicator-item: #ced0da;
-
+$footer-link: #b1b1b1;
+$footer-registration: #9c9c9c;

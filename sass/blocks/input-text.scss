@@ -17,4 +17,8 @@
   &--wide {
     width: 225px;
   }
+
+  &::placeholder {
+    color: $darkblue-50;
+  }
 }

@@ -1,0 +1,65 @@
+.page-footer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  padding: 0 4.5% 35px;
+  font-family: 'OpenSans';
+  color: $white;
+  background-color: $footer-bg;
+
+  &__item {
+    width: 45%;
+
+    &--social {
+      min-width: 205px;
+    }
+
+    &--credits {
+      margin-top: 40px;
+      width: 90%;
+    }
+  }
+
+  &__item-header {
+    display: block;
+    margin: 40px 0 27px;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 24px;
+  }
+
+  @media #{$mobile-widths-only} {
+
+  }
+
+  @media #{$tablet-widths} {
+    &__item {
+      width: 35%;
+
+      &--credits {
+        width: 80%;
+      }
+    }
+  }
+  
+  @media #{$desktop-widths} {
+    justify-content: center;
+    padding: 0 15px 60px;
+
+    &__item {
+      width: 20%;
+
+      &--company {
+        width: 12%;
+      }
+
+      &--contacts {
+        width: 15%;
+      }
+
+      &--social {
+        min-width: 215px;
+      }
+    }
+  }
+}

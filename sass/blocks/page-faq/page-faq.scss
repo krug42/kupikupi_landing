@@ -1,13 +1,16 @@
 .page-faq {
   @include container();
   display: flex;
+  padding-top: 50px; 
+  padding-bottom: 33px;
   flex-flow: column nowrap;
   align-items: center;
   background-color: $secondary-bg;
 
   &__header {
     position: relative;
-    margin: 50px 0 11px;
+    margin: 0;
+    margin-bottom: 11px;
     font-size: 30px;
     font-weight: 700;
     color: $orange;
@@ -38,12 +41,37 @@
     margin-top: 15px;
   }
 
+  &__showall {
+    display: block;
+    margin: 37px 0 0;
+    padding-bottom: 6px;
+    font-family: 'OpenSans';
+    font-size: 16px;
+    font-weight: 300;
+    text-decoration: none;
+    color: $orange;
+    border-bottom: 1px solid $darkblue;
+  }
+
   @media #{$tablet-widths} {
+    padding-top: 80px;
+    padding-bottom: 60px;
+    
+    &__showall {
+      margin-top: 53px;
+    }
+
     &__collapser {
       max-width: 780px;
     }
   }
   
   @media #{$desktop-widths} {
+    padding-top: 110px;
+    padding-bottom: 87px;
+
+    &__showall {
+      margin-top: 70px;
+    }
   }
 }

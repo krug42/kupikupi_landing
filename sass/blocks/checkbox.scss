@@ -1,0 +1,33 @@
+.checkbox {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+
+  &__input {
+    display: none;
+  }
+
+  &__input + &__styles,
+  &__input:checked + &__styles {
+    display: block;
+    width: 17px;
+    height: 17px;
+    border: 1px solid $lightgray;
+    border-radius: 3px;
+    background-color: $verylightblue;
+    cursor: pointer;
+  }
+
+  &__input:checked + &__styles {
+    //insert icon here
+    background-color: tomato;
+  }
+
+  &__label {
+    margin: 0 4px;
+    font-family: 'OpenSans';
+    font-size: 12px;
+    font-weight: 300;
+    color: $darkblue;
+  }
+}

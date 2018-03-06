@@ -1,0 +1,14 @@
+.page-feedback {
+  @include container();
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  padding-top: 45px;
+  padding-bottom: 39px;
+  background-color: gray;
+  background-image: url("../img/hCOi_I5JApI.jpg");
+
+  &__form {
+    max-width: 503px;
+  }
+}
