@@ -9,4 +9,24 @@
   &__item {
     margin-top: 40px;
   }
+
+  @media #{$tablet-widths} {
+    justify-content: space-around;
+    flex-flow: row wrap;
+
+    &__item {
+      min-width: 280px;
+      width: 50%;
+      margin-top: 45px;
+    }
+  }
+  
+  @media #{$desktop-widths} {
+    justify-content: center;
+
+    &__item {
+      width: 30%;
+      margin-top: 50px;
+    }
+  }
 }

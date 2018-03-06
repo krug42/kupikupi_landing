@@ -3,10 +3,11 @@
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
+  padding-top: 63px;
+  padding-bottom: 140px;
   background-color: $secondary-bg;
-
+  
   &__header {
-    margin-top: 63px;
     background-color: inherit;
     
     span {
@@ -14,8 +15,14 @@
       background-color: $secondary-bg;
     }
   }
+  
+  @media #{$tablet-widths} {
+    padding-top: 79px;
+    padding-bottom: 165px;
+  }
 
-  &__list {
-    margin-bottom: 130px;
+  @media #{$desktop-widths} {
+    padding-top: 95px;
+    padding-bottom: 190px;
   }
 }

@@ -3,6 +3,7 @@
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
+  padding-bottom: 44px;
   border: 5px solid $orange;
 
   &__header {
@@ -17,7 +18,22 @@
   }
 
   &__list {
-    margin-top: 4px;
-    margin-bottom: 44px;
+    margin-top: 5px;
+  }
+
+  @media #{$tablet-widths} {
+    padding-bottom: 57px;
+
+    &__list {
+      margin-top: 20px;
+    }
+  }
+  
+  @media #{$desktop-widths} {
+    padding-bottom: 70px;
+
+    &__list {
+      margin-top: 35px;
+    }
   }
 }

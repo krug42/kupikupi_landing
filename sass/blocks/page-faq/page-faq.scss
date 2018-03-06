@@ -51,6 +51,10 @@
     text-decoration: none;
     color: $orange;
     border-bottom: 1px solid $darkblue;
+
+    &:hover {
+      color: $blue;
+    }
   }
 
   @media #{$tablet-widths} {
