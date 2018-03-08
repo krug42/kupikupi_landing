@@ -1,7 +1,7 @@
 .page-faq {
   @include container();
   display: flex;
-  padding-top: 50px; 
+  padding-top: 50px;
   padding-bottom: 33px;
   flex-flow: column nowrap;
   align-items: center;
@@ -13,10 +13,11 @@
     margin-bottom: 11px;
     font-size: 30px;
     font-weight: 700;
+    text-align: center;
     color: $orange;
 
     &::after {
-      content: '';
+      content: "";
       position: absolute;
       left: 0;
       right: 0;
@@ -30,7 +31,7 @@
 
   &__caption {
     margin: 15px 0;
-    font-family: 'OpenSans';
+    font-family: "OpenSans";
     font-size: 20px;
     font-weight: 300;
     color: $darkblue;
@@ -45,7 +46,7 @@
     display: block;
     margin: 37px 0 0;
     padding-bottom: 6px;
-    font-family: 'OpenSans';
+    font-family: "OpenSans";
     font-size: 16px;
     font-weight: 300;
     text-decoration: none;
@@ -60,7 +61,7 @@
   @media #{$tablet-widths} {
     padding-top: 80px;
     padding-bottom: 60px;
-    
+
     &__showall {
       margin-top: 53px;
     }
@@ -69,7 +70,7 @@
       max-width: 780px;
     }
   }
-  
+
   @media #{$desktop-widths} {
     padding-top: 110px;
     padding-bottom: 87px;

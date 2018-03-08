@@ -4,9 +4,10 @@
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
+  background-color: $primary-bg;
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     left: 0;
     right: 0;

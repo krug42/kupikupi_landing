@@ -1,14 +1,16 @@
 .question-circle {
-  display: block;
+  display: inline-block;
   width: 13px;
   height: 13px;
-  margin: 2px auto 0;
-  font-size: 13px;
+  margin-left: 5px;
+  font-family: "OpenSans";
+  font-size: 12px;
+  font-weight: 700;
   color: $white;
   background-color: $darkblue;
   border-radius: 50%;
 
   &::before {
-    content: '?';
+    content: "?";
   }
 }

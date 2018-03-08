@@ -5,12 +5,14 @@
     align-items: center;
     min-height: 60px;
     margin-top: 0;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
     padding-left: 25px;
     padding-right: 45px;
     border-bottom: 1px solid $lightgray;
     user-select: none;
     cursor: pointer;
-    
+
     &::before {
       content: attr(data-count);
       font-size: 36px;
@@ -24,17 +26,18 @@
       border: 0;
     }
   }
-  
+
   &__header-text {
     margin: 0;
     margin-left: 18px;
-    font-size: 16px;
+    font-size: 14px;
+    line-height: 1.25;
     font-weight: 300;
   }
-  
+
   &__content {
     display: none;
-    padding: 5px 8px 20px;
+    padding: 5px 10px 20px;
     border-right: 1px solid $lightgray;
     border-left: 1px solid $lightgray;
   }
@@ -60,14 +63,16 @@
       display: block;
       box-shadow: 0 5px 10px -3px $black-15;
     }
-
-
   }
 
   @media #{$tablet-widths} {
     &__content {
       padding-left: 25px;
       padding-right: 25px;
+    }
+
+    &__header-text {
+      font-size: 16px;
     }
   }
 }

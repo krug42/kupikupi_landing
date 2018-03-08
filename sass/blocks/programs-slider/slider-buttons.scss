@@ -14,10 +14,10 @@
     &:focus {
       background-image: $orange-gradient;
       outline: none;
-      
+
       &::before,
       &::after {
-        background-color: $white;;
+        background-color: $white;
       }
     }
 
@@ -31,29 +31,43 @@
     }
 
     &::before {
-      top: 60%;
-      transform: translate(-50%, -50%) rotate(45deg);
+      top: 8px;
+      transform: rotate(45deg);
     }
-    
+
     &::after {
-      bottom: 30%;
-      transform: translate(-50%, -50%) rotate(-45deg);
+      bottom: 9px;
+      transform: rotate(-45deg);
     }
-    
+
     &--prev {
       margin-right: 15px;
-      
+
+      &::before,
+      &::after {
+        right: 10px;
+      }
+
       &::before {
-        transform: translate(-50%, -50%) rotate(135deg);
+        transform: rotate(135deg);
       }
 
       &::after {
-        transform: translate(-50%, -50%) rotate(-135deg);
+        transform: rotate(-135deg);
       }
     }
 
     &--next {
-      margin-left: 10px;
+      margin-left: 15px;
+
+      &::before,
+      &::after {
+        left: 10px;
+      }
     }
+  }
+
+  @media #{$tablet-widths} {
+    transform: scale(1.3);
   }
 }

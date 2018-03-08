@@ -50,9 +50,6 @@
     z-index: 1;
   }
 
-  &__info-bar {
-  }
-
   &__content-wrapper {
     @include container();
     display: flex;
@@ -68,8 +65,8 @@
 
   &__heading,
   &__caption {
-    height: 100%;
-    margin: 49px 0 0 0;
+    display: block;
+    margin: 49px 0 0;
     padding: 0;
     font-size: 30px;
     font-weight: 700;
@@ -132,7 +129,7 @@
 
     &__logo-link {
       display: block;
-    
+
       > img {
         height: 48px;
         width: auto;
@@ -156,7 +153,7 @@
     &__logo-link {
       display: block;
       margin-top: 45px;
-  
+
       > img {
         height: 70px;
         width: auto;
@@ -164,7 +161,6 @@
     }
   }
 
-  
   @media #{$desktop-widths} {
     &__login-button,
     &__info-bar {

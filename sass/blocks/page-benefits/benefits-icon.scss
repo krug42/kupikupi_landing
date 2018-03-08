@@ -1,0 +1,13 @@
+.benefits-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: $benefits-item-gradient;
+  border-radius: 50%;
+
+  &__img {
+    display: block;
+    width: 50%;
+    height: auto;
+  }
+}

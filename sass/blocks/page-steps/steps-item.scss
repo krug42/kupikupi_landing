@@ -1,0 +1,41 @@
+.steps-item {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  text-align: center;
+
+  &::before {
+    content: attr(data-step-count);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 67px;
+    width: 67px;
+    margin: 0 auto;
+    font-size: 36px;
+    font-weight: 900;
+    color: $white;
+    background-image: $orange-gradient;
+    border-radius: 50%;
+  }
+
+  &__text {
+    margin: 22px 0 0 0;
+    font-size: 14px;
+    font-weight: 700;
+    max-width: 225px;
+  }
+
+  @media #{$tablet-widths} {
+    &__text {
+      font-size: 16px;
+      max-width: 260px;
+    }
+  }
+
+  @media #{$desktop-widths} {
+    &__text {
+      font-size: 18px;
+    }
+  }
+}

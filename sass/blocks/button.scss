@@ -14,4 +14,10 @@
   background-color: $lightorange;
   box-shadow: 0 3px 0 0 $orange, 0 5px 5px 3px $black-15;
   cursor: pointer;
+  outline: none;
+
+  &:active {
+    transform: translateY(3px);
+    box-shadow: none;
+  }
 }

@@ -19,8 +19,9 @@
     left: 0;
     right: 0;
     bottom: -0.75em;
-    display: block;
-    padding: 0 0.3em;
+    padding: 0;
+    padding-left: 0.4em;
+    padding-right: 0.2em;
     margin: 0 auto;
     max-width: 215px;
     font-size: 16px;
@@ -45,7 +46,24 @@
     margin: 10px auto;
   }
 
+  @media #{$tablet-widths} {
+    &__header {
+      bottom: -0.65em;
+      max-width: 325px;
+      font-size: 24px;
+    }
+
+    &__button-wrapper {
+      margin: 20px auto;
+    }
+  }
+
   @media #{$desktop-widths} {
+    &__header {
+      max-width: 410px;
+      font-size: 30px;
+    }
+
     &__slides-list {
       display: flex;
       flex-flow: row wrap;

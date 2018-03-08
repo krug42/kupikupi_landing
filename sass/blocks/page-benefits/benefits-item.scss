@@ -1,0 +1,44 @@
+.benefits-item {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+
+  &__icon {
+    flex-shrink: 0;
+    width: 33px;
+    height: 33px;
+  }
+
+  &__text {
+    margin: 0;
+    margin-left: 9px;
+    padding: 0;
+    font-family: "OpenSans";
+    font-size: 10px;
+    font-weight: 300;
+  }
+
+  @media #{$tablet-widths} {
+    &__icon {
+      width: 48px;
+      height: 48px;
+    }
+
+    &__text {
+      font-size: 13px;
+      margin-left: 13px;
+    }
+  }
+
+  @media #{$desktop-widths} {
+    &__icon {
+      width: 63px;
+      height: 63px;
+    }
+
+    &__text {
+      font-size: 16px;
+      margin-left: 18px;
+    }
+  }
+}

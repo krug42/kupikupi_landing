@@ -1,5 +1,88 @@
 .page-steps {
   @include container();
-  
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
   padding-top: 37px;
+  background-color: $primary-bg;
+
+  &__intro {
+    margin: 0 5% 20px;
+  }
+
+  &__container {
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 30px 0;
+    text-align: center;
+  }
+
+  &__list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    list-style: none;
+  }
+
+  &__item {
+    width: 45%;
+    margin-top: 38px;
+
+    //ОТСТУПЫ КАК В МОБИЛЬНОМ МАКЕТЕ, сделано с width50%
+    // &--left {
+    //   padding-right: 8%;
+
+    //   &::before {
+    //     margin-left: 30%;
+    //   }
+    // }
+
+    // &--right {
+    //   padding-right: 2%;
+
+    //   &::before {
+    //     margin-right: 35%;
+    //   }
+    // }
+  }
+
+  @media #{$tablet-widths} {
+    padding-top: 46px;
+
+    &__item {
+      margin-top: 57px;
+    }
+
+    &__intro {
+      margin-bottom: 35px;
+    }
+
+    &__container {
+      margin: 40px 0;
+    }
+  }
+
+  @media #{$desktop-widths} {
+    padding-top: 55px;
+    padding-bottom: 465px;
+    background-image: url("../img/steps-bg.png");
+    background-repeat: no-repeat;
+    background-size: 1170px;
+    background-position: center bottom 38%;
+
+    &__item {
+      width: 24%;
+      margin-top: 76px;
+    }
+
+    &__intro {
+      margin: 0 0 50px;
+    }
+
+    &__container {
+      margin: 50px 0 0;
+    }
+  }
 }
