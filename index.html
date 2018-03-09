@@ -57,7 +57,7 @@
     <button class="toggle">
       <span class="toggle__icon">Показать меню</span>
     </button>
-    <a href="" class="page-header__login-button  button  login-button">Личный кабинет</a>
+    <a href="" class="page-header__login-button  login-button">Личный кабинет</a>
     <div class="page-header__content-wrapper">
       <div class="page-header__row-wrapper">
         <a class="page-header__logo-link">
@@ -90,7 +90,7 @@
         </p>
       </div>
       <!-- slide content end -->
-      <a href="" class="page-header__signin-button  signin-button">Регистрация</a>
+      <a href="" class="page-header__sign-in-button  sign-in-button">Регистрация</a>
     </div>
     <div class="page-header__sign"></div>
   </header>
@@ -322,7 +322,7 @@
             <p class="steps-item__text">Зарегистрируйтесь в&nbsp;OPENI.
               <span class="question-circle"></span>
             </p>
-            <a href="" class="button  signin-openi-button">Регистрация в&nbsp;OPENI</a>
+            <a href="" class="page-steps__sign-in-button  sign-in-openi-button">Регистрация в&nbsp;OPENI</a>
           </li>
           <li class="page-steps__item  steps-item  page-steps__item--right" data-step-count="2">
             <p class="steps-item__text">Вступите в&nbsp;КОПИКУПИ. Выберете одну из&nbsp;программ: Недвижимость или Автомобиль.</p>
@@ -370,104 +370,109 @@
         <span class="section-header__text">Калькулятор</span>
       </h3>
       <form action="" class="page-calculator__form  calculator">
-        <div class="calculator__inputbox  input-container">
-          <label for="plan" class="input-container__label-text">Я&nbsp;планирую купить</label>
-          <select name="plan" id="plan" class="input-container__input  input-text">
-            <option value="auto">Автомобиль</option>
-            <option value="realty">Недвижимость</option>
-          </select>
-        </div>
-        <div class="calculator__inputbox  input-container">
-          <label for="total-amount" class="input-container__label-text">стоимостью</label>
-          <input type="text" id="total-amount" class="input-container__input input-text">
-        </div>
-        <div class="calculator__inputbox  input-container">
-          <label for="date" class="input-container__label-wrapper">
-            <span class="input-container__subheader">Срок</span>
-            <span class="input-container__label-text input-container__label-text--little">Укажите в&nbsp;течении какого времени вы&nbsp;готовы делать выплаты по&nbsp;заему</span>
-          </label>
-          <div class="input-container__range-picker-wrapper">
-            <span class="input-container__range-picker-result"></span>
-            <input type="range" id="date" class="input-container__range-picker">
+        <div class="calculator__row-wrapper">
+          <div class="calculator__inputbox  calc-item">
+            <label for="plan" class="calc-item__label-text">Я&nbsp;планирую купить</label>
+            <select name="plan" id="plan" class="calc-item__input  input-text">
+              <option value="auto">Автомобиль</option>
+              <option value="realty">Недвижимость</option>
+            </select>
+          </div>
+          <div class="calculator__inputbox  calc-item">
+            <label for="total-amount" class="calc-item__label-text">стоимостью</label>
+            <input type="text" id="total-amount" class="calc-item__input input-text">
           </div>
         </div>
-        <p class="calculator__about">
-          А&nbsp;мы&nbsp;посчитаем когда вы&nbsp;сможете получить заем. Очередность выстраивается на&nbsp;основе коэффициента участия&nbsp;&mdash;
-          это пропорциональная зависимость ваших вложений к&nbsp;заему, который вам необходим, формула выглядит так
-        </p>
-        <div class="calculator__inputbox  input-container">
-          <label for="initial-payment" class="input-container__label-wrapper">
-            <span class="input-container__subheader input-container__subheader--big">Вношу</span>
-            <span class="input-container__label-text input-container__label-text--middle">Сумма, которую вы&nbsp;готовы внести сразу</span>
+        <div class="calculator__inputbox  calc-item">
+          <label for="date" class="calc-item__label-wrapper">
+            <span class="calc-item__subheader">Срок</span>
+            <span class="calc-item__label-text calc-item__label-text--small">Укажите в&nbsp;течении какого времени вы&nbsp;готовы делать выплаты по&nbsp;заему</span>
           </label>
-          <input type="text" id="initial-payment" class="input-container__input input-text input-text--wide">
+          <div class="calc-item__range-picker-wrapper">
+            <span class="calc-item__range-picker-result"></span>
+            <input type="range" id="date" class="calc-item__range-picker">
+          </div>
+          <p class="calculator__about">
+            А&nbsp;мы&nbsp;посчитаем когда вы&nbsp;сможете получить заем. Очередность выстраивается на&nbsp;основе коэффициента участия&nbsp;&mdash;
+            это пропорциональная зависимость ваших вложений к&nbsp;заему, который вам необходим, формула выглядит
+            <a href="">так</a>
+          </p>
         </div>
-        <p class="calculator__about">
-          Одним из&nbsp;преимуществ программ &laquo;КОПИКУПИ&raquo; является отсутствие обязательного первоначального взноса. Вы&nbsp;самостоятельно
-          определяете, какой взнос сделаете в&nbsp;программу. Помните, что первоначальный взнос продвигает вас в&nbsp;очереди,
-          чем больше взнос, тем ближе выдача заема.
-        </p>
-        <div class="calculator__inputbox  input-container">
-          <label for="monthly-payment" class="input-container__label-wrapper">
-            <span class="input-container__subheader input-container__subheader--big">Коплю</span>
-            <span class="input-container__label-text input-container__label-text--middle">Сумма, которую вы&nbsp;готовы вносить ежемесячно</span>
+        <div class="calculator__inputbox  calc-item">
+          <label for="initial-payment" class="calc-item__label-wrapper">
+            <span class="calc-item__subheader calc-item__subheader--big">Вношу</span>
+            <span class="calc-item__label-text calc-item__label-text--middle">Сумма, которую вы&nbsp;готовы внести сразу</span>
           </label>
-          <input type="text" id="monthly-payment" class="input-container__input input-text input-text--wide">
+          <input type="text" id="initial-payment" class="calc-item__input input-text input-text--wide">
+          <p class="calculator__about">
+            Одним из&nbsp;преимуществ программ &laquo;КОПИКУПИ&raquo; является отсутствие обязательного первоначального взноса. Вы&nbsp;самостоятельно
+            определяете, какой взнос сделаете в&nbsp;программу. Помните, что первоначальный взнос продвигает вас в&nbsp;очереди,
+            чем больше взнос, тем ближе выдача заема.
+          </p>
         </div>
-        <p class="calculator__about calculator__about--withdivider">
-          Ежемесячные накопления помогут вам подняться в&nbsp;очереди и&nbsp;быстрее получить беспроцентный заем на&nbsp;вашу цель.
-        </p>
-        <p class="calculator__about calculator__about--important">
-          Помните&nbsp;&mdash; чем больше вы&nbsp;накопите, тем меньше будут членский взнос и&nbsp;ежемесячный платеж и&nbsp;тем быстрее
-          вы&nbsp;получите беспроцентный заём.
-        </p>
+        <div class="calculator__inputbox  calc-item">
+          <label for="monthly-payment" class="calc-item__label-wrapper">
+            <span class="calc-item__subheader calc-item__subheader--big">Коплю</span>
+            <span class="calc-item__label-text calc-item__label-text--middle">Сумма, которую вы&nbsp;готовы вносить ежемесячно</span>
+          </label>
+          <input type="text" id="monthly-payment" class="calc-item__input input-text input-text--wide">
+          <p class="calculator__about calculator__about--withdivider">
+            Ежемесячные накопления помогут вам подняться в&nbsp;очереди и&nbsp;быстрее получить беспроцентный заем на&nbsp;вашу цель.
+          </p>
+          <p class="calculator__about calculator__about--important">
+            Помните&nbsp;&mdash; чем больше вы&nbsp;накопите, тем меньше будут членский взнос и&nbsp;ежемесячный платеж и&nbsp;тем быстрее
+            вы&nbsp;получите беспроцентный заём.
+          </p>
+        </div>
         <button type="submit" class="button  calculator__submit-button">Рассчитать</button>
       </form>
-      <div class="result">
+      <div class="page-calculator__result  result">
         <div class="result__main">
-          <div class="result__item  result-item">
-            <span class="result-item__caption">Вы&nbsp;получите заем приблизительно через</span>
-            <span class="result-item__value  result-item__value--month" id="result-month">0</span>
+          <div class="result__item  calc-item">
+            <span class="calc-item__caption">Вы&nbsp;получите заем
+              <br> приблизительно через</span>
+            <span class="calc-item__value  calc-item__value--big  calc-item__value--month" id="result-month">0</span>
           </div>
-          <div class="result__item  result-item">
-            <span class="result-item__caption">К&nbsp;этому времени вы&nbsp;накопите:</span>
-            <span class="result-item__value  result-item__value--rub" id="result-accumulated-amount">0</span>
+          <div class="result__item  calc-item">
+            <span class="calc-item__caption">К&nbsp;этому времени
+              <br> вы&nbsp;накопите:</span>
+            <span class="calc-item__value  calc-item__value--big  calc-item__value--rub" id="result-accumulated-amount">0</span>
           </div>
         </div>
-        <span class="input-container__subheader  input-container__subheader--big  result__subheader">Оформляю</span>
-        <div class="result__item  result-item">
-          <span class="result-item__caption">
+        <div class="result__item  calc-item  calc-item">
+          <span class="calc-item__subheader  calc-item__subheader--big  result__subheader">Оформляю</span>
+          <span class="calc-item__caption">
             <b>Членский взнос</b>&nbsp;&mdash; это единоразовый платеж при получении заема на&nbsp;руки.
           </span>
-          <span class="result-item__complex-string">
-            <span class="result-item__value result-item__value--thin">8.4%</span> =
-            <span class="result-item__value result-item__value--thin result-item__value--rub" id="membership-fee">0</span>
+          <span class="calc-item__complex-string">
+            <span class="calc-item__value calc-item__value--thin">8.4%</span> =
+            <span class="calc-item__value calc-item__value--thin calc-item__value--rub" id="membership-fee">0</span>
           </span>
-        </div>
-        <div class="result__plus-sign"></div>
-        <div class="result__item  result-item">
-          <span class="result-item__caption result-item__caption--thin">
+          <span class="result__plus-sign"></span>
+          <span class="calc-item__caption">
             <b>Оформление сделки</b>&nbsp;&mdash; по&nbsp;опыту наших участников оформление документов и&nbsp;банковский перевод
             составит
           </span>
-          <span class="result-item__complex-string">=
-            <span class="result-item__value result-item__value--thin">1.5%</span> =
-            <span class="result-item__value result-item__value--thin result-item__value--rub" id="execution-fee">0</span>
+          <span class="calc-item__complex-string">&asymp;
+            <span class="calc-item__value calc-item__value--thin">1.5%</span> =
+            <span class="calc-item__value calc-item__value--thin calc-item__value--rub" id="execution-fee">0</span>
           </span>
         </div>
-        <div class="result__equals-sign"></div>
-        <span class="input-container__subheader  input-container__subheader--big  result__subheader">Живу и&nbsp;покупаю</span>
-        <div class="result__item  result-item">
-          <span class="result-item__caption result-item__caption--important result-item__caption--nomargin">Вам остается выплатить</span>
-          <span class="result-item__value result-item__value--rub result-item__value--important" id="result-total-amount">0</span>
-        </div>
-        <div class="result__item  result-item">
-          <span class="result-item__caption result-item__caption--important">Срок</span>
-          <span class="result-item__value result-item__value--year result-item__value--important" id="result-years">0</span>
-        </div>
-        <div class="result__item  result-item">
-          <span class="result-item__caption result-item__caption--important">Ежемесячный платеж составляет</span>
-          <span class="result-item__value result-item__value--rub result-item__value--important" id="result-montly-payment">0</span>
+        <span class="result__equals-sign"></span>
+        <span class="calc-item__subheader  calc-item__subheader--big  result__subheader">Живу и&nbsp;покупаю</span>
+        <div class="result__row-wrapper">
+          <div class="result__item  calc-item">
+            <span class="calc-item__caption calc-item__caption--important calc-item__caption--nomargin">Вам остается выплатить</span>
+            <span class="calc-item__value calc-item__value--rub calc-item__value--important" id="result-total-amount">0</span>
+          </div>
+          <div class="result__item  calc-item">
+            <span class="calc-item__caption calc-item__caption--important">Срок</span>
+            <span class="calc-item__value calc-item__value--year calc-item__value--important" id="result-years">0</span>
+          </div>
+          <div class="result__item  calc-item">
+            <span class="calc-item__caption calc-item__caption--important">Ежемесячный платеж составляет</span>
+            <span class="calc-item__value calc-item__value--rub calc-item__value--important" id="result-montly-payment">0</span>
+          </div>
         </div>
       </div>
       <div class="result__graph  result-graph"></div>
@@ -568,7 +573,7 @@
             <div class="review__video"></div>
             <div class="review__author review-author">
               <a href="" class="review-author__avatar">
-                <img src="" alt="vk avatar" class="review-author__avatar-image" width="64" height="64">
+                <img src="img/vk-avatar-2.png" alt="vk avatar" class="review-author__avatar-image" width="64" height="64">
               </a>
               <div class="review-author__name-wrapper">
                 <h5 class="review-author__name">Татьяна Лаврухина</h5>
@@ -760,7 +765,7 @@
     </section>
     <section class="page-feedback">
       <form action="" class="page-feedback__form feedback-form">
-        <p class="feedback-form__header">Остались вопросы?</p>
+        <h3 class="feedback-form__header">Остались вопросы?</h3>
         <p class="feedback-form__caption">Укажите ваши контакты, и&nbsp;консультанты запишут вас на&nbsp;встречу в&nbsp;наш уютный офис и&nbsp;дадут исчерпывающую
           информацию о&nbsp;программах КОПИКУПИ</p>
         <div class="feedback-form__input-wrapper">
