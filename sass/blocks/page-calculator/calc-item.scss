@@ -1,0 +1,200 @@
+.calc-item {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  text-align: center;
+
+  &__label-wrapper {
+    display: flex;
+    flex-flow: column nowrap;
+    margin-top: 13px;
+  }
+
+  &__label-text {
+    display: inline-block;
+    font-size: 24px;
+    font-weight: 500;
+    color: $darkblue;
+    
+    &--small {
+      position: relative;
+      margin-top: 9px;
+      font-size: 16px;
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: -7px;
+        right: 0;
+        left: 0;
+        margin: 0 auto;
+        height: 1px;
+        width: 27%;
+        background-color: $lightgray;
+      }
+    }
+
+    &--middle {
+      font-size: 18px;
+    }
+  }
+
+  &__input {
+    margin: 14px 0;
+  }
+
+  &__subheader {
+    margin: 13px 0 0 0;
+    font-size: 25px;
+    font-weight: 700;
+    margin: 0;
+    color: $orange;
+    
+    &--big {
+      position: relative;
+      margin: 8px 0 15px;
+      font-weight: 500;
+      font-size: 30px;
+      text-transform: uppercase;
+
+      &::before {
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom: -4px;
+        width: 30px;
+        height: 3px;
+        background-color: $darkblue;
+        transform: translateX(-50%);
+      }
+    }
+  }
+
+  &__range-picker-wrapper {
+    //TEMP
+    padding: 20px;
+    height: 119px;
+  }
+
+  &__caption {
+    margin-top: 16px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.2;
+    color: $darkblue;
+
+    b {
+      font-weight: 700;
+    }
+
+    &--thin {
+      font-weight: 300;
+    }
+
+    &--important {
+      font-size: 24px;
+    }
+
+    &--nomargin {
+      margin-top: 0;
+    }
+  }
+  
+  &__value {
+    margin: 12px 0 8px;
+    font-family: 'OpenSans';
+    font-size: 30px;
+    font-weight: 500;
+    color: $orange;
+
+    &--month {
+      &::after {
+        content: ' Месяцев';
+        font-size: 18px;
+      }
+    }
+
+    &--thin {
+      font-weight: 300;
+    }
+
+    &--big {
+      font-family: 'OpenSans';
+      font-weight: 700;
+    }
+  }
+
+  &__complex-string {
+    margin-top: 3px;
+    font-size: 30px;
+    font-weight: 300;
+    color: $darkblue;
+  }
+  
+  // &__complex-string &__value {
+  //   font-size: inherit;
+  // }
+
+  @media #{$tablet-widths} {
+    &__label-text {
+      font-size: 25px;
+      
+      &--small {
+        position: relative;
+        margin-top: 18px;
+        font-size: 18px;
+  
+        &::after {
+          width: 33%;
+        }
+      }
+  
+      &--middle {
+        position: relative;
+        margin: 15px 0;
+        font-size: 25px;
+
+        &::after {
+          content: '';
+          position: absolute;
+          bottom: -7px;
+          right: 0;
+          left: 0;
+          margin: 0 auto;
+          height: 1px;
+          width: 33%;
+          background-color: $lightgray;
+        }
+      }
+    }
+
+    &__caption {
+      margin-top: 21px;
+      max-width: 740px;
+      font-size: 18px;
+
+      b {
+        font-weight: 700;
+      }
+
+      &--thin {
+        font-weight: 300;
+      }
+
+      &--important {
+        font-size: 24px;
+      }
+    }
+
+    &__value {
+
+      &--big {
+        font-size: 36px;
+      }
+    }
+
+    &__complex-string {
+      margin-top: 17px;
+    }
+  }
+}

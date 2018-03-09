@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
 }
 
 *,
@@ -13,8 +14,7 @@ body {
   min-width: 320px;
   margin: 0 auto;
   padding: 0;
-  font-family: "Museo Cyrl";
-  //TODO: зафолбэчить шрифты
+  font-family: 'Museo Cyrl', Georgia, 'Times New Roman', Times, serif;
   font-weight: 500;
   font-size: 16px;
   color: $black;

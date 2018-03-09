@@ -7,41 +7,139 @@
     position: relative;
     display: flex;
     flex-flow: column nowrap;
+    justify-content: space-between;
     align-items: center;
-    margin: 23px 20% 36px;
-    padding: 9px;
+    margin: 23px 0 36px;
+    padding: 22px 45px;
     text-align: center;
     border: 1px dashed $darkblue;
     border-radius: 10px;
     min-height: 245px;
 
-    .result__item:last-of-type {
-      margin-top: 9px;
+    .calc-item {
+      margin: 0;
+
+      &__caption {
+        margin: 0
+      }
+
+      &__value {
+        margin: 12px 0 0;
+      }
     }
 
     &::after {
       content: '';
       position: absolute;
       top: 52%;
-      right: 0;
-      left: 0;
+      left: 50%;
       width: 52px;
       height: 1px;
-      margin: 0 auto;
       background-color: $darkblue-40;
+      transform: translate(-50%, -50%);
     }
   }
 
   &__equals-sign,
   &__plus-sign {
+    position: relative;
     height: 38px;
     width: 38px;
     margin: 18px 0 7px;
-    background-color: $orange;
+    background-color: inherit;
+    
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      width: 38px;
+      border-radius: 3px;
+      background-color: $orange;
+    }
+  }
+  
+  &__equals-sign {
+    &::before,
+    &::after {
+      height: 12px;
+    }
+
+    &::before {
+      top: 4px;
+    }
+    
+    &::after {
+      bottom: 4px; 
+    }
+  }
+
+  &__plus-sign {
+    &::before,
+    &::after {
+      height: 10px;
+      top: 50%;
+      left: 0;
+    }
+
+    &::before {
+      transform-origin: center center;
+      transform: translateY(-50%) rotate(90deg);
+    }
+
+    &::after {
+      transform: translateY(-50%); 
+    }
   }
 
   &__login {
     margin-top: 44px;
-    margin-bottom: 65px;
+  }
+
+  &__row-wrapper {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+
+  @media #{$tablet-widths} {
+    &__main {
+      flex-flow: row nowrap;
+      margin: 23px 0 36px;
+      min-height: 135px;
+      min-width: 555px;
+
+      &::after {
+        top: 50%;
+        width: 1px;
+        height: 52px;
+      }
+    }
+
+    &__plus-sign {
+      margin: 28px 0 10px;
+    }
+
+    &__equals-sign {
+      margin: 45px 0 30px;
+    }
+  }
+
+  @media #{$desktop-widths} {
+    &__row-wrapper {
+      flex-flow: row nowrap;
+      justify-content: space-around;
+      align-items: center;
+      width: 100%;
+      margin-top: 5px;
+
+      .calc-item {
+        width: 14%;
+      }
+
+      .calc-item:first-child,
+      .calc-item:last-child {
+        min-width: 43%;
+      }
+    }
   }
 }

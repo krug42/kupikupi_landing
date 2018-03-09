@@ -6,18 +6,8 @@
   &__avatar {
     position: relative;
     display: block;
-  }
-  
-  &__avatar-image {
-    position: relative;
-    display: block;
-    width: 64px;
-    height: 64px;
-    background-color: $placeholder-bg;
-    border-radius: 50%;
-    padding: 10px;
     
-    &::before {
+    &::after {
       content: '';
       position: absolute;
       bottom: 2px;
@@ -27,6 +17,15 @@
       background-color: $darkblue;
       border-radius: 50%;
     }
+  }
+  
+  &__avatar-image {
+    position: relative;
+    display: block;
+    width: 64px;
+    height: 64px;
+    background-color: $placeholder-bg;
+    border-radius: 50%;
   }
 
   &__name-wrapper {

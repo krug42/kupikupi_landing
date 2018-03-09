@@ -48,6 +48,11 @@
     // }
   }
 
+  &__sign-in-button {
+    margin-top: 7px;
+    margin-bottom: 41px;
+  }
+
   @media #{$tablet-widths} {
     padding-top: 46px;
 
@@ -66,11 +71,11 @@
 
   @media #{$desktop-widths} {
     padding-top: 55px;
-    padding-bottom: 465px;
+    padding-bottom: 380px;
     background-image: url("../img/steps-bg.png");
     background-repeat: no-repeat;
     background-size: 1170px;
-    background-position: center bottom 38%;
+    background-position: center bottom 24%;
 
     &__item {
       width: 24%;
@@ -78,11 +83,11 @@
     }
 
     &__intro {
-      margin: 0 0 50px;
+      margin: 0 0 40px;
     }
 
     &__container {
-      margin: 50px 0 0;
+      margin: 60px 0 0;
     }
   }
 }

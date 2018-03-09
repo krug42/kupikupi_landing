@@ -35,5 +35,6 @@
     padding-right: 1.7em;
     font-size: 14px;
     line-height: 24px;
+    @include box-shadow();
   }
 }

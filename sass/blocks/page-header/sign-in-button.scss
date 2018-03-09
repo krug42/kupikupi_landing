@@ -1,4 +1,4 @@
-.signin-button {
+.sign-in-button {
   padding: 0.2em 2.4em;
   min-width: 140px;
   font-size: 20px;
@@ -9,4 +9,13 @@
   background-color: transparent;
   border: 2px solid $orange;
   border-radius: 12px;
+
+  &:hover {
+    background-color: $orange;
+  }
+
+  &:active {
+    color: $orange;
+    background-color: $white;
+  }
 }

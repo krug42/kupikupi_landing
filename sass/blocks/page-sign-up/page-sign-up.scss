@@ -29,14 +29,18 @@
   }
 
   &__button {
-    margin-top: 16px;
-
     display: inline-block;
     padding: 0.45em 1.6em 0.7em;
+    margin-top: 16px;
     font-size: 16px;
     font-weight: 700;
+    background-color: $darkorange;
     background-image: $sign-up-button-gradient;
-    box-shadow: 0 3px 0 0 $sign-up-button-shadow, 0 5px 5px 3px $black-15;
+    box-shadow: 0 3px 0 0 $sign-up-button-shadow;
+
+    &:hover {
+      background-image: none;
+    }
   }
 
   @media #{$desktop-widths} {

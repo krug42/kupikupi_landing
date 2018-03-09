@@ -11,3 +11,21 @@
     max-width: 1170px;
   }
 }
+
+@mixin box-shadow($x: 0, $y: 5px, $blur: 10px, $expand: 1px) {
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    box-shadow: $x $y $blur $expand $black-15;
+  }
+
+  &:active::before {
+    box-shadow: none;
+  }
+}
