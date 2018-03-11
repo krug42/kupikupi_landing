@@ -65,8 +65,14 @@
         </a>
         <div class="page-header__info-bar  info-bar">
           <div class="info-bar__wrapper">
-            <span class="info-bar__city">Омск</span>
-            <a href="tel:88002345877" class="info-bar__phone">8-800-2345-877</a>
+            <span class="info-bar__city">
+              <span class="icon icon--white" aria-hidden="true">
+                <svg width="7" height="10">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-map-marker"></use>
+                </svg>
+              </span>&nbsp;Омск</span>
+            <a href="tel:88002345877" class="info-bar__phone">
+              8-800-2345-877</a>
           </div>
         </div>
       </div>
@@ -395,7 +401,7 @@
           <p class="calculator__about">
             А&nbsp;мы&nbsp;посчитаем когда вы&nbsp;сможете получить заем. Очередность выстраивается на&nbsp;основе коэффициента участия&nbsp;&mdash;
             это пропорциональная зависимость ваших вложений к&nbsp;заему, который вам необходим, формула выглядит
-            <a href="">так</a>
+            <a href="" tabindex="-1">так</a>
           </p>
         </div>
         <div class="calculator__inputbox  calc-item">
@@ -431,12 +437,21 @@
           <div class="result__item  calc-item">
             <span class="calc-item__caption">Вы&nbsp;получите заем
               <br> приблизительно через</span>
-            <span class="calc-item__value  calc-item__value--big  calc-item__value--month" id="result-month">0</span>
+            <span class="calc-item__value  calc-item__value--big  calc-item__value--month">
+              <span id="result-month">0</span>
+            </span>
           </div>
           <div class="result__item  calc-item">
             <span class="calc-item__caption">К&nbsp;этому времени
               <br> вы&nbsp;накопите:</span>
-            <span class="calc-item__value  calc-item__value--big  calc-item__value--rub" id="result-accumulated-amount">0</span>
+            <span class="calc-item__value  calc-item__value--big  calc-item__value--rub">
+              <span id="result-accumulated-amount">0</span>
+              <span class="icon icon--orange" aria-hidden="true">
+                <svg width="13" height="14">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-rouble"></use>
+                </svg>
+              </span>
+            </span>
           </div>
         </div>
         <div class="result__item  calc-item  calc-item">
@@ -446,7 +461,14 @@
           </span>
           <span class="calc-item__complex-string">
             <span class="calc-item__value calc-item__value--thin">8.4%</span> =
-            <span class="calc-item__value calc-item__value--thin calc-item__value--rub" id="membership-fee">0</span>
+            <span class="calc-item__value calc-item__value--thin calc-item__value--rub">
+              <span id="membership-fee">0</span>
+              <span class="icon icon--orange" aria-hidden="true">
+                <svg width="12" height="14">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-rouble"></use>
+                </svg>
+              </span>
+            </span>
           </span>
           <span class="result__plus-sign"></span>
           <span class="calc-item__caption">
@@ -455,7 +477,14 @@
           </span>
           <span class="calc-item__complex-string">&asymp;
             <span class="calc-item__value calc-item__value--thin">1.5%</span> =
-            <span class="calc-item__value calc-item__value--thin calc-item__value--rub" id="execution-fee">0</span>
+            <span class="calc-item__value calc-item__value--thin calc-item__value--rub">
+              <span id="execution-fee">0</span>
+              <span class="icon icon--orange" aria-hidden="true">
+                <svg width="12" height="14">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-rouble"></use>
+                </svg>
+              </span>
+            </span>
           </span>
         </div>
         <span class="result__equals-sign"></span>
@@ -463,15 +492,31 @@
         <div class="result__row-wrapper">
           <div class="result__item  calc-item">
             <span class="calc-item__caption calc-item__caption--important calc-item__caption--nomargin">Вам остается выплатить</span>
-            <span class="calc-item__value calc-item__value--rub calc-item__value--important" id="result-total-amount">0</span>
+            <span class="calc-item__value calc-item__value--rub calc-item__value--important">
+              <span id="result-total-amount">0</span>
+              <span class="icon icon--orange" aria-hidden="true">
+                <svg width="12" height="14">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-rouble"></use>
+                </svg>
+              </span>
+            </span>
           </div>
           <div class="result__item  calc-item">
             <span class="calc-item__caption calc-item__caption--important">Срок</span>
-            <span class="calc-item__value calc-item__value--year calc-item__value--important" id="result-years">0</span>
+            <span class="calc-item__value calc-item__value--year calc-item__value--important">
+              <span id="result-years">0</span>
+            </span>
           </div>
           <div class="result__item  calc-item">
             <span class="calc-item__caption calc-item__caption--important">Ежемесячный платеж составляет</span>
-            <span class="calc-item__value calc-item__value--rub calc-item__value--important" id="result-montly-payment">0</span>
+            <span class="calc-item__value calc-item__value--rub calc-item__value--important">
+              <span id="result-montly-payment">0</span>
+              <span class="icon icon--orange" aria-hidden="true">
+                <svg width="12" height="14">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-rouble"></use>
+                </svg>
+              </span>
+            </span>
           </div>
         </div>
       </div>
@@ -530,21 +575,39 @@
       </h3>
       <ul class="page-stats__list stats-list">
         <li class="stats-list__item stats-item">
-          <span class="stats-item__value">56&nbsp;886&nbsp;399</span>
+          <span class="stats-item__value">56&nbsp;886&nbsp;399
+            <span class="icon icon--orange" aria-hidden="true">
+              <svg width="13" height="15">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-rouble"></use>
+              </svg>
+            </span>
+          </span>
           <p class="stats-item__caption">Сэкономлено
             <br>
             <b>нашими пайщиками</b>
           </p>
         </li>
         <li class="stats-list__item stats-item">
-          <span class="stats-item__value">6&nbsp;693&nbsp;768</span>
+          <span class="stats-item__value">6&nbsp;693&nbsp;768
+            <span class="icon icon--orange" aria-hidden="true">
+              <svg width="13" height="15">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-rouble"></use>
+              </svg>
+            </span>
+          </span>
           <p class="stats-item__caption">Готовы к&nbsp;выдаче
             <br>
             <b>уже сегодня</b>
           </p>
         </li>
         <li class="stats-list__item stats-item">
-          <span class="stats-item__value">145&nbsp;637&nbsp;389</span>
+          <span class="stats-item__value">145&nbsp;637&nbsp;389
+            <span class="icon icon--orange" aria-hidden="true">
+              <svg width="13" height="15">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-rouble"></use>
+              </svg>
+            </span>
+          </span>
           <p class="stats-item__caption">
             <b>Выдано пайщикам на&nbsp;приобретение</b>
             <br> Недвижимости и&nbsp;Автомобиля</p>
@@ -574,6 +637,11 @@
             <div class="review__author review-author">
               <a href="" class="review-author__avatar">
                 <img src="img/vk-avatar-2.png" alt="vk avatar" class="review-author__avatar-image" width="64" height="64">
+                <span class="icon icon--white  review-author__avatar-icon" aria-hidden="true">
+                  <svg width="12" height="7">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-vk"></use>
+                  </svg>
+                </span>
               </a>
               <div class="review-author__name-wrapper">
                 <h5 class="review-author__name">Татьяна Лаврухина</h5>
@@ -581,9 +649,25 @@
               </div>
             </div>
             <div class="review__info-wrapper">
-              <span class="review__info">Сумма займа 160&nbsp;000&nbsp;на 12&nbsp;месяцев</span>
-              <span class="review__info">Платеж 8&nbsp;708</span>
-              <span class="review__info">Накопила 55&nbsp;500 за&nbsp;16&nbsp;месяцев</span>
+              <span class="review__info">Сумма займа 160&nbsp;000
+                <span class="icon" aria-hidden="true">
+                  <svg width="5" height="8">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-rouble"></use>
+                  </svg>
+                </span>&nbsp;на 12&nbsp;месяцев</span>
+              <span class="review__info">Платеж 8&nbsp;708
+                <span class="icon" aria-hidden="true">
+                  <svg width="5" height="8">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-rouble"></use>
+                  </svg>
+                </span>
+              </span>
+              <span class="review__info">Накопила 55&nbsp;500
+                <span class="icon" aria-hidden="true">
+                  <svg width="5" height="8">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-rouble"></use>
+                  </svg>
+                </span>&nbsp;за&nbsp;16&nbsp;месяцев</span>
             </div>
             <h4 class="review__header">Рефинансирование автокредита</h4>
             <p class="review__text">Я&nbsp;очень довольна, что такая возможность существует. Я&nbsp;считаю, что это необходимая вещь: помощь населению
@@ -647,6 +731,11 @@
         <li class="collapse__item  collapse-item  collapse-item--active">
           <div class="collapse-item__header" data-count="01">
             <h4 class="collapse-item__header-text">Как работает КОПИКУПИ</h4>
+            <span class="icon" aria-hidden="true">
+              <svg width="13" height="8">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-angle-down"></use>
+              </svg>
+            </span>
           </div>
           <div class="collapse-item__content">
             <p class="collapse-item__content-paragraph">Первое место в&nbsp;этом рейтинге мы&nbsp;отдаем именно этому громкому заявлению. Нам важно ваше доверие, поэтому
@@ -677,6 +766,11 @@
         <li class="collapse__item  collapse-item">
           <div class="collapse-item__header" data-count="02">
             <h4 class="collapse-item__header-text">Высокий процент на&nbsp;заем</h4>
+            <span class="icon" aria-hidden="true">
+              <svg width="13" height="8">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-angle-down"></use>
+              </svg>
+            </span>
           </div>
           <div class="collapse-item__content">
             <p class="collapse-item__content-paragraph">Первое место в&nbsp;этом рейтинге мы&nbsp;отдаем именно этому громкому заявлению. Нам важно ваше доверие, поэтому
@@ -707,6 +801,11 @@
         <li class="collapse__item  collapse-item">
           <div class="collapse-item__header" data-count="03">
             <h4 class="collapse-item__header-text">Завышение стоимости имущества, отказ от&nbsp;выплат</h4>
+            <span class="icon" aria-hidden="true">
+              <svg width="13" height="8">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-angle-down"></use>
+              </svg>
+            </span>
           </div>
           <div class="collapse-item__content">
           </div>
@@ -714,6 +813,11 @@
         <li class="collapse__item  collapse-item">
           <div class="collapse-item__header" data-count="04">
             <h4 class="collapse-item__header-text">Критическая зависимость от&nbsp;утраты стоимости залогового имущества</h4>
+            <span class="icon" aria-hidden="true">
+              <svg width="13" height="8">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-angle-down"></use>
+              </svg>
+            </span>
           </div>
           <div class="collapse-item__content">
           </div>
@@ -721,6 +825,11 @@
         <li class="collapse__item  collapse-item">
           <div class="collapse-item__header" data-count="05">
             <h4 class="collapse-item__header-text">Взаимозависимость Пайщиков: проблемы одного рождают проблемы других</h4>
+            <span class="icon" aria-hidden="true">
+              <svg width="13" height="8">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-angle-down"></use>
+              </svg>
+            </span>
           </div>
           <div class="collapse-item__content">
           </div>
@@ -728,6 +837,11 @@
         <li class="collapse__item  collapse-item">
           <div class="collapse-item__header" data-count="06">
             <h4 class="collapse-item__header-text">Отсутствие проверки платежеспособности вызывает подозрения в&nbsp;защищенности от&nbsp;недобросовестных Пайщиков</h4>
+            <span class="icon" aria-hidden="true">
+              <svg width="13" height="8">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-angle-down"></use>
+              </svg>
+            </span>
           </div>
           <div class="collapse-item__content">
           </div>
@@ -735,6 +849,11 @@
         <li class="collapse__item  collapse-item">
           <div class="collapse-item__header" data-count="07">
             <h4 class="collapse-item__header-text">Когда участник получит заем?</h4>
+            <span class="icon" aria-hidden="true">
+              <svg width="13" height="8">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-angle-down"></use>
+              </svg>
+            </span>
           </div>
           <div class="collapse-item__content">
           </div>
@@ -742,6 +861,11 @@
         <li class="collapse__item  collapse-item">
           <div class="collapse-item__header" data-count="08">
             <h4 class="collapse-item__header-text">Гарантии работы кооператива</h4>
+            <span class="icon" aria-hidden="true">
+              <svg width="13" height="8">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-angle-down"></use>
+              </svg>
+            </span>
           </div>
           <div class="collapse-item__content">
           </div>
@@ -749,6 +873,11 @@
         <li class="collapse__item  collapse-item">
           <div class="collapse-item__header" data-count="09">
             <h4 class="collapse-item__header-text">Сдвиг сроков получения</h4>
+            <span class="icon" aria-hidden="true">
+              <svg width="13" height="8">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-angle-down"></use>
+              </svg>
+            </span>
           </div>
           <div class="collapse-item__content">
           </div>
@@ -756,6 +885,11 @@
         <li class="collapse__item  collapse-item">
           <div class="collapse-item__header" data-count="10">
             <h4 class="collapse-item__header-text">Открытость схемы очередности</h4>
+            <span class="icon" aria-hidden="true">
+              <svg width="13" height="8">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-angle-down"></use>
+              </svg>
+            </span>
           </div>
           <div class="collapse-item__content">
           </div>
@@ -773,12 +907,24 @@
           <input type="text" class="input-text  feedback-form__input" name="feedback-phone" id="feedback-phone" placeholder="Контактный телефон">
           <div class="feedback-form__checkbox_wrapper  checkbox">
             <input type="checkbox" class="checkbox__input" name="feedback-realty" id="feedback-realty">
-            <label for="feedback-realty" class="checkbox__styles"></label>
+            <label for="feedback-realty" class="checkbox__styles">
+              <span class="icon" aria-hidden="true">
+                <svg width="10" height="8">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-check"></use>
+                </svg>
+              </span>
+            </label>
             <label for="feedback-realty" class="checkbox__label">Недвижимость</label>
           </div>
           <div class="feedback-form__checkbox_wrapper  checkbox">
             <input type="checkbox" class="checkbox__input" name="feedback-realty" id="feedback-auto">
-            <label for="feedback-auto" class="checkbox__styles"></label>
+            <label for="feedback-auto" class="checkbox__styles">
+              <span class="icon" aria-hidden="true">
+                <svg width="10" height="8">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-check"></use>
+                </svg>
+              </span>
+            </label>
             <label for="feedback-auto" class="checkbox__label">Автомобиль</label>
           </div>
         </div>
@@ -815,10 +961,25 @@
       </div>
       <div class="page-footer__item  page-footer__item--contacts  footer-contacts">
         <span class="page-footer__item-header  footer-contacts__header">Контакты</span>
-        <a href="tel:88003003040" class="footer-contacts__link  footer-contacts__link--phone">8-800-300-30-40</a>
+        <a href="tel:88003003040" class="footer-contacts__link  footer-contacts__link--phone">
+          <span class="icon  icon--white" aria-hidden="true">
+            <svg width="9" height="9">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-phone"></use>
+            </svg>
+          </span>&nbsp;8-800-300-30-40</a>
         <span class="footer-contacts__caption">Звонок по&nbsp;России бесплатный</span>
-        <span class="footer-contacts__caption  footer-contacts__caption--city">Омск</span>
-        <a href="tel:+73812322632" class="footer-contacts__link  footer-contacts__link--phone  footer-contacts__link--second-phone">+7 (3812)-32-26-32</a>
+        <span class="footer-contacts__caption  footer-contacts__caption--city">
+          <span class="icon icon--white" aria-hidden="true">
+            <svg width="7" height="10">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-map-marker"></use>
+            </svg>
+          </span>&nbsp;Омск</span>
+        <a href="tel:+73812322632" class="footer-contacts__link  footer-contacts__link--phone  footer-contacts__link--second-phone">
+          <span class="icon  icon--white" aria-hidden="true">
+            <svg width="9" height="9">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-phone"></use>
+            </svg>
+          </span>&nbsp;+7 (3812)-32-26-32</a>
         <a href="" class="footer-contacts__link footer-contacts__link--change-city">Сменить город</a>
       </div>
       <div class="page-footer__item  page-footer__item--social  footer-social">
@@ -840,7 +1001,7 @@
           ИНН/КПП: 5505048797&nbsp;/ 550301001; Устав Компании</p>
         <p class="footer-credits__author">Разработка сайта &mdash;
           <a href="" class="footer-credits__author-link">
-            <img src="" alt="apptech">
+            <img src="img/apptech-logo.svg" alt="apptech" w="71" h="20">
           </a>
         </p>
       </div>
