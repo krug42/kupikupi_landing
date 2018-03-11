@@ -4,12 +4,15 @@
   align-items: center;
 
   &__input {
-    display: none;
+    position: absolute;
+    // display: none;
+    opacity: 0;
   }
 
   &__input + &__styles,
   &__input:checked + &__styles {
     display: block;
+    position: relative;
     width: 17px;
     height: 17px;
     border: 1px solid $lightgray;
@@ -18,14 +21,26 @@
     cursor: pointer;
   }
 
-  &__input:checked + &__styles {
-    //insert icon here
-    background-color: tomato;
+  &__input:focus + &__styles {
+    border: 1px solid $orange;
+  }
+
+  &__input + &__styles .icon {
+    position: absolute;
+    top: 44%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.1s ease;
+  }
+
+  &__input:checked + &__styles .icon {
+    opacity: 1;
   }
 
   &__label {
     margin: 0 4px;
-    font-family: 'OpenSans';
+    font-family: "OpenSans";
     font-size: 12px;
     font-weight: 300;
     color: $darkblue;

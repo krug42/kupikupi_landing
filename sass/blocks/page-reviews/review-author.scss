@@ -6,19 +6,8 @@
   &__avatar {
     position: relative;
     display: block;
-    
-    &::after {
-      content: '';
-      position: absolute;
-      bottom: 2px;
-      right: -3px;
-      width: 21px;
-      height: 21px;
-      background-color: $darkblue;
-      border-radius: 50%;
-    }
   }
-  
+
   &__avatar-image {
     position: relative;
     display: block;
@@ -26,6 +15,23 @@
     height: 64px;
     background-color: $placeholder-bg;
     border-radius: 50%;
+  }
+
+  &__avatar-icon {
+    position: absolute;
+    bottom: 2px;
+    right: -3px;
+    width: 21px;
+    height: 21px;
+    background-color: $darkblue;
+    border-radius: 50%;
+
+    > svg {
+      position: absolute;
+      top: 50%;
+      left: 47%;
+      transform: translate(-50%, -50%);
+    }
   }
 
   &__name-wrapper {
@@ -48,6 +54,5 @@
     font-size: 14px;
     font-weight: 300;
     color: $gray;
-
   }
 }

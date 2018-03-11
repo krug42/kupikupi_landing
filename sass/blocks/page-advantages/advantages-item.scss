@@ -16,12 +16,12 @@
 
   &__text {
     margin: 5px 0 0 0;
-    font-family: 'OpenSans';
-    font-size: 13px;
+    font-family: "OpenSans";
+    font-size: 14px;
     font-weight: 300;
     line-height: 1.25;
   }
-  
+
   &::before,
   &::after {
     content: $advantage-gradient;

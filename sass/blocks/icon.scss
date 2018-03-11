@@ -1,0 +1,16 @@
+.icon {
+  display: inline-block;
+  user-select: none;
+
+  &--white {
+    > svg {
+      fill: $white;
+    }
+  }
+
+  &--orange {
+    > svg {
+      fill: $orange;
+    }
+  }
+}

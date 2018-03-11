@@ -8,7 +8,7 @@
     padding-top: 0.5em;
     padding-bottom: 0.5em;
     padding-left: 25px;
-    padding-right: 45px;
+    padding-right: 14px;
     border-bottom: 1px solid $lightgray;
     user-select: none;
     cursor: pointer;
@@ -18,6 +18,16 @@
       font-size: 36px;
       font-weight: 700;
       color: $lightgray;
+    }
+
+    .icon {
+      margin-left: auto;
+      margin-right: 0;
+
+      > svg {
+        margin-left: 5px;
+        fill: $lightgray;
+      }
     }
   }
 

@@ -1,5 +1,4 @@
 .footer-credits {
-
   &__site-logo {
     > img {
       height: 40px;
@@ -18,9 +17,20 @@
   }
 
   &__author {
+    display: flex;
+    align-items: center;
     margin: 40px 0 0;
-    font-family: 'Museo Cyrl';
+    font-family: "Museo Cyrl";
     font-size: 14px;
     font-weight: 500;
+  }
+
+  &__author-link {
+    display: inline-block;
+
+    > img {
+      margin-top: 5px;
+      margin-left: 0.3em;
+    }
   }
 }

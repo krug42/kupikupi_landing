@@ -6,17 +6,23 @@
   padding-top: 63px;
   padding-bottom: 140px;
   background-color: $secondary-bg;
-  
+  background-image: url("../img/advantages-bg--big.png");
+  background-repeat: no-repeat;
+  background-size: auto 50%;
+  background-position: right 65% top 50%;
+
   &__header {
     background-color: inherit;
-    
+
     span {
       padding: 0.45em 0.7em;
       background-color: $secondary-bg;
     }
   }
-  
+
   @media #{$tablet-widths} {
+    background-size: auto 45%;
+    background-position: left 44% top 50%;
     padding-top: 79px;
     padding-bottom: 165px;
   }
@@ -24,5 +30,7 @@
   @media #{$desktop-widths} {
     padding-top: 95px;
     padding-bottom: 190px;
+    background-size: auto auto;
+    background-position: left 44% top 69%;
   }
 }

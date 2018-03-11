@@ -15,7 +15,7 @@
     color: $white;
 
     &::after {
-      content: '';
+      content: "";
       position: absolute;
       left: 0;
       right: 0;
@@ -44,7 +44,7 @@
   }
 
   @media #{$desktop-widths} {
-    padding-top: 40px;
+    padding-top: 13px;
     padding-bottom: 40px;
   }
 }

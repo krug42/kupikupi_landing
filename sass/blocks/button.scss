@@ -24,4 +24,8 @@
     transform: translateY(3px);
     box-shadow: none;
   }
+
+  &:focus {
+    background-color: $darkorange;
+  }
 }

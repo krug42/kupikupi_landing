@@ -7,7 +7,10 @@
   padding-top: 56px;
   padding-bottom: 65px;
   background-color: $primary-bg;
-
+  background-image: url("../img/calc-bg--mobile.png");
+  background-repeat: no-repeat;
+  background-size: auto 92%;
+  background-position: right 59% top 76%;
 
   &::before {
     content: $orange-gradient;
@@ -46,6 +49,10 @@
   }
 
   @media #{$tablet-widths} {
+    background-image: url("../img/calc-bg--desktop.png");
+    background-size: auto 85%;
+    background-position: left 40% top 91%;
+
     &__form {
       margin-top: 15px;
       max-width: 840px;
@@ -54,8 +61,6 @@
 
   @media #{$desktop-widths} {
     padding-bottom: 150px;
-    background-image: url('../img/calc-bg.png');
-    background-repeat: no-repeat;
     background-size: auto auto;
     background-position: center top 195px;
   }

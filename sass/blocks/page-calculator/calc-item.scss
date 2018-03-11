@@ -15,14 +15,14 @@
     font-size: 24px;
     font-weight: 500;
     color: $darkblue;
-    
+
     &--small {
       position: relative;
       margin-top: 9px;
       font-size: 16px;
 
       &::after {
-        content: '';
+        content: "";
         position: absolute;
         bottom: -7px;
         right: 0;
@@ -49,7 +49,7 @@
     font-weight: 700;
     margin: 0;
     color: $orange;
-    
+
     &--big {
       position: relative;
       margin: 8px 0 15px;
@@ -58,7 +58,7 @@
       text-transform: uppercase;
 
       &::before {
-        content: '';
+        content: "";
         position: absolute;
         left: 50%;
         bottom: -4px;
@@ -99,18 +99,23 @@
       margin-top: 0;
     }
   }
-  
+
   &__value {
     margin: 12px 0 8px;
-    font-family: 'OpenSans';
     font-size: 30px;
     font-weight: 500;
     color: $orange;
 
     &--month {
       &::after {
-        content: ' Месяцев';
+        content: " Месяцев";
         font-size: 18px;
+      }
+    }
+
+    &--year {
+      &::after {
+        content: " лет";
       }
     }
 
@@ -119,7 +124,7 @@
     }
 
     &--big {
-      font-family: 'OpenSans';
+      font-family: "OpenSans";
       font-weight: 700;
     }
   }
@@ -130,7 +135,7 @@
     font-weight: 300;
     color: $darkblue;
   }
-  
+
   // &__complex-string &__value {
   //   font-size: inherit;
   // }
@@ -138,24 +143,24 @@
   @media #{$tablet-widths} {
     &__label-text {
       font-size: 25px;
-      
+
       &--small {
         position: relative;
         margin-top: 18px;
         font-size: 18px;
-  
+
         &::after {
           width: 33%;
         }
       }
-  
+
       &--middle {
         position: relative;
         margin: 15px 0;
         font-size: 25px;
 
         &::after {
-          content: '';
+          content: "";
           position: absolute;
           bottom: -7px;
           right: 0;
@@ -187,7 +192,6 @@
     }
 
     &__value {
-
       &--big {
         font-size: 36px;
       }

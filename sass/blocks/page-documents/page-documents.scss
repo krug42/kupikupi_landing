@@ -3,11 +3,16 @@
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
+  background-image: url("../img/documents-bg--big.png");
+  background-repeat: no-repeat;
+  background-size: 37% auto;
+  background-position: right -15% bottom 55px;
 
   &__header {
     margin: 42px 0 0;
     font-size: 36px;
     font-weight: 700;
+    text-align: center;
     color: $orange;
   }
 
@@ -24,12 +29,15 @@
     margin-bottom: 50px;
     width: 100%;
   }
-  
+
   @media #{$tablet-widths} {
-     &__header {
+    background-size: 280px auto;
+    background-position: right -12px bottom 20px;
+
+    &__header {
       margin-top: 69px;
     }
-    
+
     &__item {
       width: 44%;
       margin-bottom: 70px;
@@ -42,6 +50,9 @@
   }
 
   @media #{$desktop-widths} {
+    background-size: auto auto;
+    background-position: right -12px bottom;
+
     &__header {
       margin-top: 90px;
     }

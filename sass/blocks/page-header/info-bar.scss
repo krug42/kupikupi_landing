@@ -15,12 +15,13 @@
 
   &__city {
     position: relative;
-    display: block;
-    padding-left: 1em;
+    display: flex;
+    align-items: center;
     margin-bottom: 3px;
 
-    &::before {
-      //TODO: insert icon
+    .icon {
+      width: 7px;
+      height: 12px;
     }
   }
 

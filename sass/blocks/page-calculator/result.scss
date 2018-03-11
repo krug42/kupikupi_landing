@@ -2,7 +2,7 @@
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
-  
+
   &__main {
     position: relative;
     display: flex;
@@ -20,16 +20,17 @@
       margin: 0;
 
       &__caption {
-        margin: 0
+        margin: 0;
       }
 
       &__value {
         margin: 12px 0 0;
+        font-family: "OpenSans";
       }
     }
 
     &::after {
-      content: '';
+      content: "";
       position: absolute;
       top: 52%;
       left: 50%;
@@ -47,17 +48,17 @@
     width: 38px;
     margin: 18px 0 7px;
     background-color: inherit;
-    
+
     &::before,
     &::after {
-      content: '';
+      content: "";
       position: absolute;
       width: 38px;
       border-radius: 3px;
       background-color: $orange;
     }
   }
-  
+
   &__equals-sign {
     &::before,
     &::after {
@@ -67,9 +68,9 @@
     &::before {
       top: 4px;
     }
-    
+
     &::after {
-      bottom: 4px; 
+      bottom: 4px;
     }
   }
 
@@ -87,7 +88,7 @@
     }
 
     &::after {
-      transform: translateY(-50%); 
+      transform: translateY(-50%);
     }
   }
 
