@@ -14,7 +14,9 @@
 </head>
 
 <body>
-  <header class="page-header page-header__slide-bg" data-current-slide="1">
+  <header class="page-header" data-current-slide="1">
+    <div class="page-header__slide-bg  page-header__slide-bg--shown" data-slide="1"></div>
+    <div class="page-header__slide-bg" data-slide="2"></div>
     <nav class="page-header__nav  main-nav  main-nav--opened  page-header__nav--nojs">
       <ul class="main-nav__list">
         <li class="main-nav__item">
@@ -394,9 +396,18 @@
             <span class="calc-item__subheader">Срок</span>
             <span class="calc-item__label-text calc-item__label-text--small">Укажите в&nbsp;течении какого времени вы&nbsp;готовы делать выплаты по&nbsp;заему</span>
           </label>
-          <div class="calc-item__range-picker-wrapper">
-            <span class="calc-item__range-picker-result"></span>
-            <input type="range" id="date" class="calc-item__range-picker">
+          <div class="calc-item__range-picker  range-picker">
+            <span class="range-picker__result">0 месяцев</span>
+            <div class="range-picker__input-wrapper">
+              <input class="range-picker__input" id="date" type="range" min="0" max="60" step="1" value="30">
+              <span class="range-picker__progress"></span>
+              <div class="range-picker__dividers-wrapper">
+                <span class="range-picker__divider"></span>
+                <span class="range-picker__divider"></span>
+                <span class="range-picker__divider"></span>
+                <span class="range-picker__divider"></span>
+              </div>
+            </div>
           </div>
           <p class="calculator__about">
             А&nbsp;мы&nbsp;посчитаем когда вы&nbsp;сможете получить заем. Очередность выстраивается на&nbsp;основе коэффициента участия&nbsp;&mdash;
@@ -519,8 +530,92 @@
             </span>
           </div>
         </div>
+        <div class="result__timeline  result-timeline">
+          <div class="result-timeline__heading">
+            <span class="result-timeline__header-item" data-count="1">Вношу</span>
+            <span class="result-timeline__header-item" data-count="2">Коплю</span>
+            <span class="result-timeline__header-item" data-count="3">Оформляю</span>
+            <span class="result-timeline__header-item" data-count="4">Живу и покупаю</span>
+          </div>
+          <div class="result-timeline__timeline">
+            <div class="result-timeline__timeline-caption">
+              <span class="result-timeline__timeline-item  result-timeline__timeline-item--caption">Ваш
+                <br> первоначальный взнос</span>
+              <span class="result-timeline__timeline-item  result-timeline__timeline-item--caption">Ваши
+                <br> ежемесячные накопления</span>
+              <span class="result-timeline__timeline-item  result-timeline__timeline-item--withborder">
+                <span class="result-timeline__timeline-item  result-timeline__timeline-item--caption">Членский
+                  <br> взнос 8.4%</span>
+                <span class="result-timeline__timeline-item  result-timeline__timeline-item--caption">Оформление
+                  <br> документов 1%</span>
+              </span>
+              <span class="result-timeline__timeline-item  result-timeline__timeline-item--caption">Вам остается выплатить сроком&nbsp;
+                <span id="qq">5 лет</span>
+              </span>
+            </div>
+            <div class="result-timeline__timeline-strip-wrapper">
+              <div class="result-timeline__timeline-strip"></div>
+              <span class="result-timeline__timeline-divider"></span>
+              <span class="result-timeline__timeline-divider"></span>
+              <span class="result-timeline__timeline-divider"></span>
+            </div>
+            <div class="result-timeline__timeline-values">
+              <span class="result-timeline__timeline-item  result-timeline__timeline-item--value">
+                <span id="qq">0</span>
+                <span class="icon" aria-hidden="true">
+                  <svg width="8" height="9">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-rouble"></use>
+                  </svg>
+                </span>
+              </span>
+              <span class="result-timeline__timeline-item  result-timeline__timeline-item--value">
+                <span id="qq">0</span>
+                <span class="icon" aria-hidden="true">
+                  <svg width="8" height="9">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-rouble"></use>
+                  </svg>
+                </span>
+              </span>
+              <span class="result-timeline__timeline-item  result-timeline__timeline-item--withborder">
+                <span class="result-timeline__timeline-item  result-timeline__timeline-item--value">
+                  <span id="qq">0</span>
+                  <span class="icon" aria-hidden="true">
+                    <svg width="8" height="9">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-rouble"></use>
+                    </svg>
+                  </span>
+                </span>
+                <span class="result-timeline__timeline-item  result-timeline__timeline-item--value">
+                  <span id="qq">0</span>
+                  <span class="icon" aria-hidden="true">
+                    <svg width="8" height="9">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-rouble"></use>
+                    </svg>
+                  </span>
+                </span>
+              </span>
+              <span class="result-timeline__timeline-item  result-timeline__timeline-item--value">
+                <span>
+                  <span id="qq">0</span>
+                  <span class="icon" aria-hidden="true">
+                    <svg width="8" height="9">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-rouble"></use>
+                    </svg>
+                  </span>
+                </span>
+                <span>(
+                  <span id="qq">0</span>
+                  <span class="icon" aria-hidden="true">
+                    <svg width="8" height="9">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-rouble"></use>
+                    </svg>
+                  </span>&nbsp;в месяц)
+                </span>
+              </span>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="result__graph  result-graph"></div>
       <div class="result__login  result-login">
         <span class="result-login__header">Появилась новая цель?</span>
         <span class="result-login__caption">У&nbsp;нас для вас есть бонусы при открытии новой программы накопления</span>
@@ -1008,7 +1103,9 @@
     </footer>
   </main>
   <script src="js/main-menu.js" type="text/javascript"></script>
+  <script src="js/range-picker.js" type="text/javascript"></script>
   <!-- <script src="js/header-slider.js" type="text/javascript"></script> -->
+
 </body>
 
 </html>

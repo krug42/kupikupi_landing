@@ -2,6 +2,7 @@
 @import "variables.scss";
 @import "mixins.scss";
 @import "animations.scss";
+@import "../node_modules/input-range-scss/_inputrange.scss";
 
 @import "global/fonts.scss";
 @import "global/global.scss";
@@ -27,8 +28,9 @@
 @import "blocks/page-steps/steps-item.scss";
 @import "blocks/page-steps/page-steps.scss";
 @import "blocks/page-steps/sign-in-openi-button.scss";
+@import "blocks/page-calculator/range-picker.scss";
 @import "blocks/page-calculator/calc-item.scss";
-@import "blocks/page-calculator/result-graph.scss";
+@import "blocks/page-calculator/result-timeline.scss";
 @import "blocks/page-calculator/result-login.scss";
 @import "blocks/page-calculator/calculator.scss";
 @import "blocks/page-calculator/result.scss";

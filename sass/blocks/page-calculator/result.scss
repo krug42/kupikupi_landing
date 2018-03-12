@@ -92,14 +92,15 @@
     }
   }
 
-  &__login {
-    margin-top: 44px;
-  }
-
+  
   &__row-wrapper {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
+  }
+  
+  &__timeline {
+    margin-top: 60px;
   }
 
   @media #{$tablet-widths} {
@@ -123,6 +124,14 @@
     &__equals-sign {
       margin: 45px 0 30px;
     }
+
+    &__timeline {
+      margin-top: 120px;
+    }
+
+    &__login {
+      margin-top: 45px;
+    }
   }
 
   @media #{$desktop-widths} {
@@ -141,6 +150,14 @@
       .calc-item:last-child {
         min-width: 43%;
       }
+    }
+
+    &__timeline {
+      margin-top: 180px;
+    }
+
+    &__login {
+      margin-top: 95px;
     }
   }
 }

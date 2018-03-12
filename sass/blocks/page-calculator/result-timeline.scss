@@ -1,0 +1,199 @@
+.result-timeline {
+  min-height: 300px;
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 0 25px;
+  overflow-x: auto;
+  width: 100%;
+
+  &__heading {
+    display: flex;
+    width: 950px;
+    margin-left: 89px;
+    
+    > .result-timeline__header-item:nth-of-type(1) {
+      width: 24.7%;
+    }
+    
+    > .result-timeline__header-item:nth-of-type(2) {
+      width: 20.9%;
+    }
+    
+    > .result-timeline__header-item:nth-of-type(3) {
+      width: 28.1%;
+    }
+    
+    > .result-timeline__header-item:nth-of-type(4) {
+      width: auto;
+    }
+  }
+  
+  &__header-item {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 700;
+    color: $darkblue;
+    width: 25%;
+
+    &::before {
+      content: attr(data-count);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 9px;
+      color: $white;
+      width: 43px;
+      height: 43px;
+      background-color: $orange;
+      border-radius: 50%;
+    }
+  }
+
+  &__timeline {
+    margin-top: 48px;
+  }
+
+  &__timeline-strip-wrapper {
+    position: relative;
+    width: 1090px;
+    height: 32px;
+
+    > .result-timeline__timeline-divider:nth-of-type(1) {
+      left: 28.2%;
+    }
+    
+    > .result-timeline__timeline-divider:nth-of-type(2) {
+      left: 44.4%;
+    }
+    
+    > .result-timeline__timeline-divider:nth-of-type(3) {
+      left: 67.4%;
+    }
+  }
+  &__timeline-strip-wrapper {
+    margin: 2px 0;
+  }
+
+  &__timeline-strip {
+    position: absolute;
+    top: 6px;
+    z-index: 2;
+    width: 100%;
+    height: 20px;
+    background-image: $timeline-strip-gradient;
+    border-radius: 10px;
+  }
+
+  &__timeline-divider {
+    position: absolute;
+    z-index: 1;
+    width: 2px;
+    height: 32px;
+    background-image: $timeline-divider-gradient;
+  }
+
+  &__timeline-caption {
+    display: flex;
+    align-items: center;
+    width: 970px;
+    margin-left: 76px;
+
+    > .result-timeline__timeline-item:nth-of-type(1) {
+      width: 23.4%;
+    }
+    > .result-timeline__timeline-item:nth-of-type(2) {
+      width: 19.1%;
+    }
+    > .result-timeline__timeline-item:nth-of-type(3) {
+      width: 25.4%;
+    }
+    > .result-timeline__timeline-item:nth-of-type(4) {
+      margin-left: 50px;
+    }
+  }
+
+  &__timeline-item {
+    display: flex;
+    font-family: 'OpenSans';
+    color: $darkblue;
+
+    &--caption {
+      font-size: 14px;
+      font-weight: 300;
+      text-align: center;
+    }
+
+    &--withborder {
+      justify-content: center;
+      border: 1px solid $timeline-item-border;
+      border-radius: 10px;
+
+      > .result-timeline__timeline-item {
+        justify-content: center;
+        height: 100%;
+        padding: 9px 0;
+        background-image: none;
+
+        &--value {
+          padding: 12px;
+        }
+      }
+
+      > .result-timeline__timeline-item:first-child {
+        width: 51.4%;
+        border-right: 1px solid $timeline-item-border;
+      }
+
+      > .result-timeline__timeline-item:last-child {
+        width: 48.6%;
+      }
+    }
+
+    &--value {
+      justify-content: center;
+      font-size: 24px;
+      font-weight: 300;
+      text-align: center;
+      background-image: url('../img/timeline-brace.png');
+      background-repeat: no-repeat;
+      background-size: 100% 35px;
+      padding-top: 37px;
+
+      .icon > svg {
+        fill: $darkblue;
+      }
+    }
+  }
+
+  &__timeline-values {
+    display: flex;
+    align-items: flex-start;
+    width: 1090px;
+
+    > .result-timeline__timeline-item:nth-of-type(1) {
+      width: 27.4%;
+      margin-left: 5px;
+    }
+    > .result-timeline__timeline-item:nth-of-type(2) {
+      background-image: url('../img/timeline-brace--small.png');
+      width: 15.2%;
+      margin-left: 10px;
+    }
+    > .result-timeline__timeline-item:nth-of-type(3) {
+      width: 22.5%;
+      margin-left: 9px;
+    }
+    > .result-timeline__timeline-item:nth-of-type(4) {
+      // display: block;
+      flex-flow: column nowrap;
+      width: 31.5%;
+      margin-left: 7px;
+
+      > span {
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+}

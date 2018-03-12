@@ -29,6 +29,11 @@ $darkgray: #595959;
 $orange-gradient: linear-gradient(to right, $orange, $lightorange);
 $advantage-gradient: linear-gradient(to right, $darkblue, $blue);
 $filter-gradient: linear-gradient(to right, $darkblue-50, $orange-50);
+
+$timeline-strip-gradient: linear-gradient(to right, $orange 0,#ffa800 41%,#4192e3 51%,#00a651 75%);
+$timeline-divider-gradient: linear-gradient(to top, $orange, #f39c12);
+$timeline-item-border:#1ab1e3;
+
 $sign-up-section-gradient: linear-gradient(to right, $darkblue, #0a4e82);
 $sign-up-button-gradient: linear-gradient(to right, $orange, $darkorange);
 $sign-up-button-shadow: #bc5100;
@@ -44,3 +49,25 @@ $reviews-text: $darkgray;
 $indicator-item: #ced0da;
 $footer-link: #b1b1b1;
 $footer-registration: #9c9c9c;
+
+$track-color: #e2e7ee;
+$thumb-color: $verylightblue;
+
+$thumb-radius: 4px;
+$thumb-height: 16px;
+$thumb-width: 16px;
+$thumb-shadow-size: 0;
+$thumb-shadow-blur: 0;
+$thumb-shadow-color: transparent;
+$thumb-border-width: 1px;
+$thumb-border-color: $lightgray;
+
+$track-height: 4px;
+$track-shadow-size: 0;
+$track-shadow-blur: 0;
+$track-shadow-color: transparent;
+$track-border-width: 0;
+$progress-color: $benefits-item-gradient;
+
+$track-radius: 2px;
+$contrast: 0;

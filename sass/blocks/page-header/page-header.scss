@@ -4,7 +4,7 @@
   flex-flow: column nowrap;
   margin: 0;
   min-height: 603px;
-  background-position: right 25% top;
+  background-image: $filter-gradient;
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -27,14 +27,28 @@
   }
 
   &__slide-bg {
-    position: relative;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0;
+    transition: opacity 0.3s ease;
 
-    &[data-current-slide="1"] {
-      background-image: $filter-gradient, url("../img/top-slider-bg-1.jpg");
+    &[data-slide="1"] {
+      background-image: url("../img/top-slider-bg-1.jpg");
     }
 
-    &[data-current-slide="2"] {
-      background-image: $filter-gradient, url("../img/top-slider-bg-2.jpg");
+    &[data-slide="2"] {
+      background-image: url("../img/top-slider-bg-2.jpg");
+    }
+
+    &--shown {
+      opacity: 1;
     }
   }
 

@@ -32,5 +32,8 @@
     "build": "gulp build",
     "start": "npm run build && gulp serve",
     "deploy": "gulp deploy"
+  },
+  "dependencies": {
+    "input-range-scss": "^1.4.1"
   }
 }
