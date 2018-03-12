@@ -25,6 +25,10 @@
     border: 1px solid $orange;
   }
 
+  &__input:active + &__styles {
+    border: 1px solid $orange;
+  }
+
   &__input + &__styles .icon {
     position: absolute;
     top: 44%;

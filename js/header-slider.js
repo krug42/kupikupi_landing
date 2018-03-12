@@ -14,9 +14,8 @@ function changeSlide() {
   container.dataset.currentSlide = newSlideIndex;
 }
 
-
 function filterNodes(nodes, className, slideIndex) {
-  Array.prototype.forEach.call(nodes, function (node) {
+  Array.prototype.forEach.call(nodes, function(node) {
     node.classList.remove(className);
     if (Number(node.dataset.slide) === slideIndex) {
       node.classList.add(className);

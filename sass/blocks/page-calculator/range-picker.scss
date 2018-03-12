@@ -1,16 +1,21 @@
 .range-picker {
-  font-family: 'OpenSans';
+  font-family: "OpenSans";
   margin: 20px 0;
   width: 300px;
 
   &__input-wrapper {
     position: relative;
+    height: 40px;
   }
 
   &__input {
-    position: relative;
+    position: absolute;
     z-index: 2;
+    top: 12px;
+    left: 0;
     width: 100%;
+    padding: 0;
+    transform: translateY(-50%);
 
     &:focus {
       &::-ms-thumb {
