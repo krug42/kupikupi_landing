@@ -9,11 +9,11 @@
     background-color: transparent;
     background-image: none;
     cursor: pointer;
+    outline: none;
 
     &:hover,
-    &:focus {
+    &:active {
       background-image: $orange-gradient;
-      outline: none;
 
       &::before,
       &::after {

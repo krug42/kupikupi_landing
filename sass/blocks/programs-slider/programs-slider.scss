@@ -14,6 +14,19 @@
     background-color: $secondary-bg;
   }
 
+  .swiper-container {
+    position: relative;
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+  }
+
+  .swiper-slide {
+    height: 148px;
+  }
+
   &__header {
     position: absolute;
     left: 0;
@@ -33,8 +46,6 @@
 
   &__slides-list {
     display: flex;
-    flex-flow: row nowrap;
-    overflow: auto;
   }
 
   &__slide {
@@ -63,7 +74,9 @@
       max-width: 410px;
       font-size: 30px;
     }
+  }
 
+  @media (min-width: 1125px) {
     &__slides-list {
       display: flex;
       flex-flow: row wrap;

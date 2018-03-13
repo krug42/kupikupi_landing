@@ -23,7 +23,8 @@
     "gulp-uglify": "^3.0.0",
     "gulp-webp": "^3.0.0",
     "node-normalize-scss": "^3.0.0",
-    "run-sequence": "^2.1.0"
+    "run-sequence": "^2.1.0",
+    "input-range-scss": "^1.4.1"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
@@ -32,8 +33,5 @@
     "build": "gulp build",
     "start": "npm run build && gulp serve",
     "deploy": "gulp deploy"
-  },
-  "dependencies": {
-    "input-range-scss": "^1.4.1"
   }
 }

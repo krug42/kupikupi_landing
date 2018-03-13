@@ -2,20 +2,21 @@
   display: flex;
   flex-flow: column nowrap;
   background-color: transparent;
+  padding: 0 5px;
 
   &__slides {
     display: flex;
-    flex-flow: row wrap;
     list-style: none;
+    box-sizing: inherit;
     margin: 0;
     padding: 43px 0;
-    overflow: auto;
+    // overflow: auto;
   }
 
   &__slide {
     //TEMP
-    margin: 0 auto;
-    width: 460px;
+    margin: 0 32px;
+    max-width: 460px;
   }
 
   &__controls {
@@ -35,32 +36,33 @@
     border: 1px solid $orange;
     border-radius: 50%;
     cursor: pointer;
+    outline: none;
 
     
     &:before {
       content: '';
       position: absolute;
       top: 35%;
-      left: 44%;
+      transform: translateX(-50%);
       width: 0;
       height: 0;
       border-style: solid;
     }
 
     &:hover,
-    &:focus {
+    &:active {
       background-image: $orange-gradient;
-      outline: none;
     }
     
     &--prev {
       &::before {
+        left: 47%;
         border-width: 5px 6px 5px 0;
         border-color: transparent $orange transparent transparent;
       }
       
       &:hover,
-      &:focus {
+      &:active {
         &::before {
           border-color: transparent $white transparent transparent;
         }
@@ -69,12 +71,13 @@
     
     &--next {
       &::before {
+        left: 53%;
         border-width: 5px 0 5px 6px;
         border-color: transparent transparent transparent $orange;
       }
       
       &:hover,
-      &:focus {
+      &:active {
         &::before {
           border-color: transparent transparent transparent $white;
         }
@@ -82,13 +85,13 @@
     }
   }
 
-  &__indicator-list {
+  &__pagination {
     display: flex;
     flex-flow: row nowrap;
     margin: auto 31px;
   }
   
-  &__indicator-item {
+  &__pagination-bullet {
     display: block;
     width: 6px;
     height: 6px;
