@@ -1053,11 +1053,11 @@ label {
   border: 1px solid #ee772f;
   background-color: transparent;
   background-image: none;
-  cursor: pointer; }
-  .slider-buttons__button:hover, .slider-buttons__button:focus {
-    background-image: linear-gradient(to right, #ee772f, #f29716);
-    outline: none; }
-    .slider-buttons__button:hover::before, .slider-buttons__button:hover::after, .slider-buttons__button:focus::before, .slider-buttons__button:focus::after {
+  cursor: pointer;
+  outline: none; }
+  .slider-buttons__button:hover, .slider-buttons__button:active {
+    background-image: linear-gradient(to right, #ee772f, #f29716); }
+    .slider-buttons__button:hover::before, .slider-buttons__button:hover::after, .slider-buttons__button:active::before, .slider-buttons__button:active::after {
       background-color: white; }
   .slider-buttons__button::before, .slider-buttons__button::after {
     content: "";
@@ -1149,6 +1149,15 @@ label {
     width: 100%;
     height: 100%;
     background-color: #f5fbfe; }
+  .programs-slider .swiper-container {
+    position: relative;
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    height: 100%;
+    background-color: transparent; }
+  .programs-slider .swiper-slide {
+    height: 148px; }
   .programs-slider__header {
     position: absolute;
     left: 0;
@@ -1165,9 +1174,7 @@ label {
     background-color: #f5fbfe;
     z-index: 1; }
   .programs-slider__slides-list {
-    display: flex;
-    flex-flow: row nowrap;
-    overflow: auto; }
+    display: flex; }
   .programs-slider__slide {
     margin-right: 7px;
     margin-left: 7px; }
@@ -1348,9 +1355,7 @@ label {
   background-color: #f29716; }
 
 .range-picker {
-  font-family: "OpenSans";
-  margin: 20px 0;
-  width: 300px; }
+  font-family: "OpenSans"; }
   .range-picker__input-wrapper {
     position: relative;
     height: 40px; }
@@ -1382,6 +1387,8 @@ label {
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%); }
   .range-picker__result {
+    display: block;
+    margin-bottom: 4px;
     font-size: 18px;
     font-weight: 700; }
   .range-picker__divider {
@@ -1403,6 +1410,29 @@ label {
     left: 60%; }
   .range-picker__dividers-wrapper > .range-picker__divider:nth-child(4) {
     left: 80%; }
+  .range-picker__caption {
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    font-size: 12px;
+    font-weight: 300;
+    text-align: center;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%); }
+  .range-picker__captions-wrapper > .range-picker__caption:nth-child(1) {
+    font-size: 10px;
+    left: 0; }
+  .range-picker__captions-wrapper > .range-picker__caption:nth-child(2) {
+    left: 20%; }
+  .range-picker__captions-wrapper > .range-picker__caption:nth-child(3) {
+    left: 40%; }
+  .range-picker__captions-wrapper > .range-picker__caption:nth-child(4) {
+    left: 60%; }
+  .range-picker__captions-wrapper > .range-picker__caption:nth-child(5) {
+    left: 80%; }
+  .range-picker__captions-wrapper > .range-picker__caption:nth-child(6) {
+    font-size: 10px;
+    left: 100%; }
 
 .calc-item {
   display: flex;
@@ -1458,9 +1488,10 @@ label {
         background-color: #16639e;
         -webkit-transform: translateX(-50%);
                 transform: translateX(-50%); }
-  .calc-item__range-picker-wrapper {
-    padding: 20px;
-    height: 119px; }
+  .calc-item__range-picker {
+    margin: 20px 0 35px;
+    width: 90%;
+    max-width: 390px; }
   .calc-item__caption {
     margin-top: 16px;
     font-size: 16px;
@@ -2002,17 +2033,17 @@ label {
 .reviews-slider {
   display: flex;
   flex-flow: column nowrap;
-  background-color: transparent; }
+  background-color: transparent;
+  padding: 0 5px; }
   .reviews-slider__slides {
     display: flex;
-    flex-flow: row wrap;
     list-style: none;
+    box-sizing: inherit;
     margin: 0;
-    padding: 43px 0;
-    overflow: auto; }
+    padding: 43px 0; }
   .reviews-slider__slide {
-    margin: 0 auto;
-    width: 460px; }
+    margin: 0 32px;
+    max-width: 460px; }
   .reviews-slider__controls {
     display: flex;
     flex-flow: row nowrap;
@@ -2026,40 +2057,43 @@ label {
     background-color: transparent;
     border: 1px solid #ee772f;
     border-radius: 50%;
-    cursor: pointer; }
+    cursor: pointer;
+    outline: none; }
     .reviews-slider__button:before {
       content: '';
       position: absolute;
       top: 35%;
-      left: 44%;
+      -webkit-transform: translateX(-50%);
+              transform: translateX(-50%);
       width: 0;
       height: 0;
       border-style: solid; }
-    .reviews-slider__button:hover, .reviews-slider__button:focus {
-      background-image: linear-gradient(to right, #ee772f, #f29716);
-      outline: none; }
+    .reviews-slider__button:hover, .reviews-slider__button:active {
+      background-image: linear-gradient(to right, #ee772f, #f29716); }
     .reviews-slider__button--prev::before {
+      left: 47%;
       border-width: 5px 6px 5px 0;
       border-color: transparent #ee772f transparent transparent; }
-    .reviews-slider__button--prev:hover::before, .reviews-slider__button--prev:focus::before {
+    .reviews-slider__button--prev:hover::before, .reviews-slider__button--prev:active::before {
       border-color: transparent white transparent transparent; }
     .reviews-slider__button--next::before {
+      left: 53%;
       border-width: 5px 0 5px 6px;
       border-color: transparent transparent transparent #ee772f; }
-    .reviews-slider__button--next:hover::before, .reviews-slider__button--next:focus::before {
+    .reviews-slider__button--next:hover::before, .reviews-slider__button--next:active::before {
       border-color: transparent transparent transparent white; }
-  .reviews-slider__indicator-list {
+  .reviews-slider__pagination {
     display: flex;
     flex-flow: row nowrap;
     margin: auto 31px; }
-  .reviews-slider__indicator-item {
+  .reviews-slider__pagination-bullet {
     display: block;
     width: 6px;
     height: 6px;
     margin: 0 3px;
     background-color: #ced0da;
     border-radius: 50%; }
-    .reviews-slider__indicator-item--active {
+    .reviews-slider__pagination-bullet--active {
       background-color: #ee772f; }
 
 .page-reviews {
@@ -2223,10 +2257,14 @@ label {
   font-weight: 300; }
 
 .collapse-item__content {
-  display: none;
-  padding: 5px 10px 20px;
+  display: block;
+  max-height: 0;
+  overflow: hidden;
+  padding-left: 10px;
+  padding-right: 10px;
   border-right: 1px solid #e9e9e9;
-  border-left: 1px solid #e9e9e9; }
+  border-left: 1px solid #e9e9e9;
+  transition: max-height 0.4s ease; }
 
 .collapse-item__content-header {
   margin: 18px 0 0;
@@ -2243,6 +2281,9 @@ label {
 
 .collapse-item--active .collapse-item__content {
   display: block;
+  max-height: 1000px;
+  padding-top: 5px;
+  padding-bottom: 20px;
   box-shadow: 0 5px 10px -3px rgba(0, 0, 0, 0.15); }
 
 .collapse {
@@ -2555,6 +2596,9 @@ label {
           height: 1px;
           width: 33%;
           background-color: #e9e9e9; }
+    .calc-item__range-picker {
+      margin-top: 26px;
+      margin-bottom: 40px; }
     .calc-item__caption {
       margin-top: 21px;
       max-width: 740px;
@@ -2739,18 +2783,6 @@ label {
     .programs-slider__header {
       max-width: 410px;
       font-size: 30px; }
-    .programs-slider__slides-list {
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: center;
-      padding-top: 17px;
-      overflow: visible; }
-    .programs-slider__slide {
-      margin-right: 8px;
-      margin-left: 8px;
-      margin-bottom: 32px; }
-    .programs-slider__button-wrapper {
-      display: none; }
     .benefits-item__icon {
       width: 63px;
       height: 63px; }
@@ -2900,3 +2932,16 @@ label {
           width: 18%; }
         .page-footer__item--social {
           min-width: 215px; } }
+  @media (min-width: 1125px) {
+    .programs-slider__slides-list {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      padding-top: 17px;
+      overflow: visible; }
+    .programs-slider__slide {
+      margin-right: 8px;
+      margin-left: 8px;
+      margin-bottom: 32px; }
+    .programs-slider__button-wrapper {
+      display: none; } }

@@ -1,0 +1,1 @@
+"use strict";var collapsers=document.querySelectorAll(".collapse");function handleClick(e){for(var l=event.target;!l.matches(".collapse-item");){if(l.matches(".collapse-item__header"))return void l.parentNode.classList.toggle("collapse-item--active");l=l.parentNode}}Array.prototype.forEach.call(collapsers,function(e){e.addEventListener("click",handleClick)});
