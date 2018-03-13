@@ -1,7 +1,5 @@
 .range-picker {
   font-family: "OpenSans";
-  margin: 20px 0;
-  width: 300px;
 
   &__input-wrapper {
     position: relative;
@@ -46,6 +44,8 @@
   }
 
   &__result {
+    display: block;
+    margin-bottom: 4px;
     font-size: 18px;
     font-weight: 700;
   }
@@ -74,6 +74,39 @@
     }
     > .range-picker__divider:nth-child(4) {
       left: 80%;
+    }
+  }
+
+  &__caption {
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    font-size: 12px;
+    font-weight: 300;
+    text-align: center;
+    transform: translateX(-50%);
+  }
+
+  &__captions-wrapper {
+    > .range-picker__caption:nth-child(1) {
+      font-size: 10px;
+      left: 0;
+    }
+    > .range-picker__caption:nth-child(2) {
+      left: 20%;
+    }
+    > .range-picker__caption:nth-child(3) {
+      left: 40%;
+    }
+    > .range-picker__caption:nth-child(4) {
+      left: 60%;
+    }
+    > .range-picker__caption:nth-child(5) {
+      left: 80%;
+    }
+    > .range-picker__caption:nth-child(6) {
+      font-size: 10px;
+      left: 100%;
     }
   }
 }

@@ -10,11 +10,9 @@
     box-sizing: inherit;
     margin: 0;
     padding: 43px 0;
-    // overflow: auto;
   }
 
   &__slide {
-    //TEMP
     margin: 0 32px;
     max-width: 460px;
   }
@@ -102,5 +100,13 @@
     &--active {
       background-color: $orange;
     }
+  }
+
+  @media #{$tablet-widths} {
+    
+  }
+
+  @media #{$desktop-widths} {
+
   }
 }

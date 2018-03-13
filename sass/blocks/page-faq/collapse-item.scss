@@ -46,10 +46,14 @@
   }
 
   &__content {
-    display: none;
-    padding: 5px 10px 20px;
+    display: block;
+    max-height: 0;
+    overflow: hidden;
+    padding-left: 10px;
+    padding-right: 10px;
     border-right: 1px solid $lightgray;
     border-left: 1px solid $lightgray;
+    transition: max-height 0.4s ease;
   }
 
   &__content-header {
@@ -68,9 +72,12 @@
     .collapse-item__header {
       box-shadow: 0 5px 10px -3px $black-15;
     }
-
+    
     .collapse-item__content {
       display: block;
+      max-height: 1000px;
+      padding-top: 5px;
+      padding-bottom: 20px;
       box-shadow: 0 5px 10px -3px $black-15;
     }
   }

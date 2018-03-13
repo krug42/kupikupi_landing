@@ -70,10 +70,10 @@
     }
   }
 
-  &__range-picker-wrapper {
-    //TEMP
-    padding: 20px;
-    height: 119px;
+  &__range-picker {
+    margin: 20px 0 35px;
+    width: 90%;
+    max-width: 390px;
   }
 
   &__caption {
@@ -171,6 +171,11 @@
           background-color: $lightgray;
         }
       }
+    }
+
+    &__range-picker {
+      margin-top: 26px;
+      margin-bottom: 40px;
     }
 
     &__caption {
